@@ -1,11 +1,24 @@
 
-// navbar icons all//
+// L1 icons all//
+
 import L1 from '../images/logo.png'
 import L1 from '../images/search.png'
 import L1 from '../images/person.png'
 import L1 from '../images/shoppinbag.png'
 import L1 from '../images/favorite.png'
-import L1 from '../images/socialmedia.png'
+import L1 from '../images/instagarm.png'
+import L1 from '../images/facebook.png'
+import L1 from '../images/pinterset.png'
+import L1 from '../images/tiktok.png'
+import L1 from '../images/herobanner.png'
+import L1 from '../images/arrowforward.png'
+import L1 from '../images/copyright.png'
+import L1 from '../images/footerchatbox.png'
+import L1 from '../images/arrowforward.png'
+import L1 from '../images/Sustainability.png'
+
+
+
 
 
 
@@ -46,6 +59,10 @@ import S32 from '../images/product32.png'
 import S33 from '../images/product33.png'
 import S34 from '../images/product34.png'
 import S35 from '../images/product35.png'
+
+// filter page png//
+import F3 from '../images/filterbanner.png'
+
 import F36 from '../images/product36.png'
 import F37 from '../images/product37.png'
 import F38 from '../images/product38.png'
@@ -58,6 +75,13 @@ import F2_44 from '../images/product44.png'
 import M45 from '../images/product45.png'
 import M46 from '../images/product46.png'
 import M47 from '../images/product47.png'
+
+
+//Plus Size/Filters/01 //
+
+import PS from  '../images/plussizefilterbanner1.png'
+import PS from  '../images/plussizefilterbanner2.png'
+
 import PS48 from '../images/product48.png'
 import PS49 from '../images/product49.png'
 import PS50 from '../images/product50.png'
@@ -91,5 +115,21 @@ import SB2_76 from '../images/product76.png'
 
 
 
+// Ragiter page //
+import R1 from '../images/register.png'
+import R1 from '../images/apple.png'
+import R1 from '../images/facebookregister.png'
 
 
+// R1-
+// SB-
+
+
+
+const IMAGES ={
+    landingOne: L1,
+    landingTwo : L2,
+    
+
+    
+}
