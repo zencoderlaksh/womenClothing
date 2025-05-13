@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react'
+import Login from './pages/Login'
 
 const App = () => {
-  return <div className="bg-green-800 text-4xl">App</div>;
-};
+  return (
+    <>
+      <Login />
+    </>
+  )
+}
 
-export default App;
+export default App
