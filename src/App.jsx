@@ -1,26 +1,15 @@
 import React from 'react'
-<<<<<<< Updated upstream
-import Login from './pages/Login'
-
-const App = () => {
-  return (
-    <>
-      <Login />
-    </>
-  )
-}
-
-export default App
-=======
-import Register from './pages/auth/Register'
+import Register from './pages/Register'
+// import Verify from './components/verify'
 
 const App = () => {
   return (
     <div>
-     <Register></Register>
+      <Register />
+      {/* <Verify/> */}
     </div>
   )
 }
 
 export default App
->>>>>>> Stashed changes
+
