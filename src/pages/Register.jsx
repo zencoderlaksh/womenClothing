@@ -1,7 +1,7 @@
 import React from 'react';
-import IMAGES from '../assets/images/projectImages';
+import IMAGES from '../assets/images/projectImage';
 
-const Login = () => {
+const Register = () => {
     return (
         <>
 
@@ -55,4 +55,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
