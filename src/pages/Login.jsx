@@ -1,5 +1,6 @@
+
 import React from 'react';
-import IMAGES from '../assets/images/projectImages';
+import IMAGES from '../assets/images/projectImage';
 
 const Login = () => {
 
@@ -52,3 +53,4 @@ const Login = () => {
 };
 
 export default Login;
+

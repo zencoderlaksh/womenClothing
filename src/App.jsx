@@ -1,14 +1,17 @@
 import React from 'react'
-import Login from './pages/Login'
+import Register from './pages/Register'
+// import Verify from './components/verify'
 
 
 const App = () => {
   return (
     <>
-      <Login />
-  
+      <Register />
+      {/* <Verify/> */}
+      {/* <Login /> */}
     </>
   )
 }
 
 export default App
+
