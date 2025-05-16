@@ -10,7 +10,7 @@ const Login = () => {
         <>
 
             <div className='  sm:w-[100%] pl-[15px] mx-auto flex flex-row items-center justify-around mt-[20rem] md:mt-0 px-5 '>
-
+        
                 <div className="left my-[142px] flex justify-center">
                     <img src={IMAGES.RegisteImage} className='hidden sm:block  md:w-[600px] h-[600px] ' />
                 </div>
@@ -18,7 +18,7 @@ const Login = () => {
                 <div className="right md:ml-8 flex justify-center">
                     <div className="container">
                         <div className='text-conatiner sm:mx-auto flex items-center justify-center md:mx-auto '>
-                            <h3 className='sm:text-[16px] text  font-bold mb-4 md:text-[32px]'>Log in </h3>
+                            <h3 className='text-[32px]  font-bold mb-4 md:text-[32px]'>Log in </h3>
                         </div>
                         <div className="input-container">
                             <input type="text" placeholder='Email' className='inp1  border-1 border-gray-400  w-[400px]   px-[10px] py-[15px] mb-2' /> <br />

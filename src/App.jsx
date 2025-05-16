@@ -1,14 +1,15 @@
 import React from 'react'
 import Register from './pages/Register'
-// import Verify from './components/verify'
+import Login from './pages/Login'
+import SellerProductCart from './pages/Home/component/sellerproductcart/SellerProductCart'
+import Home from './pages/Home/Home'
+
 
 
 const App = () => {
   return (
     <>
-      <Register />
-      {/* <Verify/> */}
-      {/* <Login /> */}
+      <Home />
     </>
   )
 }

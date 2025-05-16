@@ -16,7 +16,7 @@
 // import L1 from '../images/copyright.png'
 // import L1 from '../images/footerchatbox.png'
 // import L1 from '../images/arrowforward.png'
-// import L1 from '../images/Sustainability.png'
+
 
 
 
@@ -28,17 +28,19 @@
 
 // // lading page start//
 
-// import L1 from '../images/product1.png'
-// import L2 from '../images/product2.png'
-// import L3 from '../images/product3.png'
-// import L4 from '../images/product4.png'
-// import L5 from '../images/product5.png'
-// import L6 from '../images/product6.png'
-// import L7 from '../images/product7.png'
-// import L8 from '../images/product8.png'
-// import L9 from '../images/product9.png'
-// import L10 from '../images/product10.png'
-// import L11 from '../images/product11.png'
+import L1 from '../images/product1.png'
+import L2 from '../images/product2.png'
+import L3 from '../images/product3.png'
+
+import L4 from '../images/product4.png'
+import L5 from '../images/product5.png'
+import L6 from '../images/product6.png'
+import L7 from '../images/product7.jpg'
+
+import L8 from '../images/product8.png'
+import L9 from '../images/product9.png'
+import L10 from '../images/product10.png'
+import L11 from '../images/product11.png'
 // import L12 from '../images/product12.png'
 // import L13 from '../images/product13.png'
 // import L14 from '../images/product14.png'
@@ -300,8 +302,25 @@ const IMAGES = {
     RegisteImage: R94,
     Apple: R95,
     facebook: R96,
-    google: R97
+    google: R97,
 
+
+
+    imgOne: L1,
+    imgTwo: L2,
+    imgThree: L3,
+
+
+    // Modiweek //
+    ModiweekOne: L8,
+    ModiweekTwo: L9,
+    ModiweekThree: L10,
+    ModiweekFour: L11,
+
+
+
+    //Sustainability banner//
+    // Sustainability: L31
 
 
 }
