@@ -14,7 +14,7 @@ const Register = () => {
                 <div className="right mt-[-80px] sm:mt-[-100px] ml-[-5px] md:mt-30 md:ml-8 flex justify-center">
                     <div className="container">
                         <div className='sm:mx-auto flex items-center justify-center md:mx-auto'>
-                            <h3 className='text-[30px] sm:text-[16px] font-bold mb-4 ml-[-10px] md:text-[32px] text-center'>
+                            <h3 className='text-[32px] sm: font-bold mb-4 ml-[-10px] md:text-[32px] text-center'>
                                 Create Account
                             </h3>
                         </div>

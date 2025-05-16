@@ -52,18 +52,22 @@
 // import PS21 from '../images/product21.png'
 // import PS22 from '../images/product22.png'
 // import PS23 from '../images/product23.png'
+
+
 // import SM24 from '../images/product24.png'
 // import SM25 from '../images/product25.png'
 // import SM26 from '../images/product26.png'
 // import SM27 from '../images/product27.png'
 // import SM28 from '../images/product28.png'
 // import SM29 from '../images/product29.png'
-// import S30 from '../images/product30.png'
-// import S31 from '../images/product31.png'
-// import S32 from '../images/product32.png'
-// import S33 from '../images/product33.png'
-// import S34 from '../images/product34.png'
-// import S35 from '../images/product35.png'
+
+
+import S30 from '../images/product30.jpg'
+import S31 from '../images/product31.png'
+import S32 from '../images/product32.jpg'
+import S33 from '../images/product33.jpg'
+import S34 from '../images/product34.png'
+import S35 from '../images/product35.jpg'
 
 // // filter page png//
 // import F3 from '../images/filterbanner.png'
@@ -300,7 +304,15 @@ const IMAGES = {
     RegisteImage: R94,
     Apple: R95,
     facebook: R96,
-    google: R97
+    google: R97,
+
+
+    searchOne: S30,
+    searchTwo: S31,
+    searchThree: S32,
+    searchFour: S33,
+    searchFive: S34,
+    searchSix: S35,
 
 
 
