@@ -1,12 +1,10 @@
-
-
 // L1 icons all//
 
-// import L1 from '../images/logo.png'
-// import L1 from '../images/search.png'
-// import L1 from '../images/person.png'
-// import L1 from '../images/shoppinbag.png'
-// import L1 from '../images/favorite.png'
+import L1 from "../images/logo.png";
+import headerIcon1 from "../images/search.png";
+import headerIcon2 from "../images/person.png";
+// import headerIcon3 from "../images/shopping_bag";
+// import headerIcon4 from "../images/favorite.png";
 // import L1 from '../images/instagarm.png'
 // import L1 from '../images/facebook.png'
 // import L1 from '../images/pinterset.png'
@@ -17,14 +15,6 @@
 // import L1 from '../images/footerchatbox.png'
 // import L1 from '../images/arrowforward.png'
 // import L1 from '../images/Sustainability.png'
-
-
-
-
-
-
-
-
 
 // // lading page start//
 
@@ -53,7 +43,6 @@
 // import PS22 from '../images/product22.png'
 // import PS23 from '../images/product23.png'
 
-
 // import SM24 from '../images/product24.png'
 // import SM25 from '../images/product25.png'
 // import SM26 from '../images/product26.png'
@@ -61,13 +50,12 @@
 // import SM28 from '../images/product28.png'
 // import SM29 from '../images/product29.png'
 
-
-import S30 from '../images/product30.jpg'
-import S31 from '../images/product31.png'
-import S32 from '../images/product32.jpg'
-import S33 from '../images/product33.jpg'
-import S34 from '../images/product34.png'
-import S35 from '../images/product35.jpg'
+import S30 from "../images/product30.jpg";
+import S31 from "../images/product31.png";
+import S32 from "../images/product32.jpg";
+import S33 from "../images/product33.jpg";
+import S34 from "../images/product34.png";
+import S35 from "../images/product35.jpg";
 
 // // filter page png//
 // import F3 from '../images/filterbanner.png'
@@ -84,7 +72,6 @@ import S35 from '../images/product35.jpg'
 // import M45 from '../images/product45.png'
 // import M46 from '../images/product46.png'
 // import M47 from '../images/product47.png'
-
 
 // //Plus Size/Filters/01 //
 
@@ -122,15 +109,11 @@ import S35 from '../images/product35.jpg'
 // import SB2_75 from '../images/product75.png'
 // import SB2_76 from '../images/product76.png'
 
-
-
 // Register page //
-import R1 from '../images/register.png'
-import R2 from '../images/apple.png'
-import R3 from '../images/googlee.png'
-import R4 from '../images/facebookregister.png'
-
-
+import R1 from "../images/register.png";
+import R2 from "../images/apple.png";
+import R3 from "../images/googlee.png";
+import R4 from "../images/facebookregister.png";
 
 // import L17 from '../images/logo.png'
 // import L18 from '../images/search.png'
@@ -155,7 +138,6 @@ import R4 from '../images/facebookregister.png'
 // import C32 from '../images/product18.png'
 
 // //Desktop/Landing/Collection Menu page end//
-
 
 // // Desktop/Landing/New in Menu page start//
 
@@ -194,7 +176,6 @@ import R4 from '../images/facebookregister.png'
 
 // // filter page png //
 
-
 // // Desktop/Shop All/Filters/01  page start //
 // import F50 from '../images/filterbanner.png'
 
@@ -220,7 +201,6 @@ import R4 from '../images/facebookregister.png'
 
 // //Desktop/Product/Modiweek page end //
 
-
 // //Plus Size/Filters/01  page start //
 
 // import PS63 from '../images/plussizefilterbanner1.png'
@@ -234,7 +214,6 @@ import R4 from '../images/facebookregister.png'
 // import PS70 from '../images/product53.png'
 
 // // Desktop/Plus Size/Filters/01  page end
-
 
 // // Desktop/Plus Size/Filters/02 page start //
 // import PS2_71 from '../images/product54.png'
@@ -277,45 +256,38 @@ import R4 from '../images/facebookregister.png'
 
 // //Desktop/ Sustainability/02 page end //
 
-
-
 // Desktop/Register/01  page start //
-import R94 from '../images/register.png'
-import R95 from '../images/apple.png'
-import R96 from '../images/facebookregister.png'
-import R97 from '../images/googlee.png'
+import R94 from "../images/register.png";
+import R95 from "../images/apple.png";
+import R96 from "../images/facebookregister.png";
+import R97 from "../images/googlee.png";
 
 // Desktop/Register/01 page end //
-
 
 // R1-
 // SB-
 
-
-
 const IMAGES = {
+  registerOne: R1,
+  registerTwo: R2,
+  registerThree: R3,
+  registerFour: R4,
 
-    registerOne: R1,
-    registerTwo: R2,
-    registerThree: R3,
-    registerFour: R4,
+  RegisteImage: R94,
+  Apple: R95,
+  facebook: R96,
+  google: R97,
 
-
-    RegisteImage: R94,
-    Apple: R95,
-    facebook: R96,
-    google: R97,
-
-
-    searchOne: S30,
-    searchTwo: S31,
-    searchThree: S32,
-    searchFour: S33,
-    searchFive: S34,
-    searchSix: S35,
-
-
-
-}
-export default IMAGES
-
+  searchOne: S30,
+  searchTwo: S31,
+  searchThree: S32,
+  searchFour: S33,
+  searchFive: S34,
+  searchSix: S35,
+  Weblogo: L1,
+  headerIcon1: headerIcon1,
+  headerIcon2: headerIcon2,
+  //   headerIcon3: headerIcon3,
+  //   headerIcon4: headerIcon4,
+};
+export default IMAGES;
