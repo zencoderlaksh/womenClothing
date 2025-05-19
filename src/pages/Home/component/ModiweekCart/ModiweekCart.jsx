@@ -32,6 +32,13 @@ const ModiweekCart = () => {
     ]
     return (
         <>
+
+            <div className="text-content sm: mx-auto  w-[74%] flex items-center justify-between mt-[88px]">
+                <div className="left">
+                    <h3 className=' text-3xl font-bold'>Modiweek</h3>
+                </div>
+
+            </div>
             <div className='cart-data sm: mx-auto flex items-center justify-center flex-wrap gap-8'>
                 {
                     ModiweekData.map((item, i) => {

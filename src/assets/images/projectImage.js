@@ -1,12 +1,10 @@
-
-
 // L1 icons all//
 
-// import L1 from '../images/logo.png'
-// import L1 from '../images/search.png'
-// import L1 from '../images/person.png'
-// import L1 from '../images/shoppinbag.png'
-// import L1 from '../images/favorite.png'
+import Weblogo from "../images/logo.png";
+import headerIcon1 from "../images/search.png";
+import headerIcon2 from "../images/person.png";
+// import headerIcon3 from "../images/shopping_bag";
+import headerIcon4 from "../images/favorite.png";
 // import L1 from '../images/instagarm.png'
 // import L1 from '../images/facebook.png'
 // import L1 from '../images/pinterset.png'
@@ -16,14 +14,6 @@
 // import L1 from '../images/copyright.png'
 // import L1 from '../images/footerchatbox.png'
 // import L1 from '../images/arrowforward.png'
-
-
-
-
-
-
-
-
 
 
 // // lading page start//
@@ -41,11 +31,11 @@ import L8 from '../images/product8.png'
 import L9 from '../images/product9.png'
 import L10 from '../images/product10.png'
 import L11 from '../images/product11.png'
-// import L12 from '../images/product12.png'
-// import L13 from '../images/product13.png'
-// import L14 from '../images/product14.png'
-// import L15 from '../images/product15.png'
-// import L16 from '../images/product16.png'
+import L12 from '../images/product12.png'
+import L13 from '../images/product13.png'
+import L14 from '../images/product14.png'
+import L15 from '../images/product15.png'
+import L16 from '../images/product16.png'
 
 // import C17 from '../images/product17.png'
 // import C18 from '../images/product18.png'
@@ -54,18 +44,20 @@ import L11 from '../images/product11.png'
 // import PS21 from '../images/product21.png'
 // import PS22 from '../images/product22.png'
 // import PS23 from '../images/product23.png'
+
 // import SM24 from '../images/product24.png'
 // import SM25 from '../images/product25.png'
 // import SM26 from '../images/product26.png'
 // import SM27 from '../images/product27.png'
 // import SM28 from '../images/product28.png'
 // import SM29 from '../images/product29.png'
-// import S30 from '../images/product30.png'
-// import S31 from '../images/product31.png'
-// import S32 from '../images/product32.png'
-// import S33 from '../images/product33.png'
-// import S34 from '../images/product34.png'
-// import S35 from '../images/product35.png'
+
+import S30 from "../images/product30.jpg";
+import S31 from "../images/product31.png";
+import S32 from "../images/product32.jpg";
+import S33 from "../images/product33.jpg";
+import S34 from "../images/product34.png";
+import S35 from "../images/product35.jpg";
 
 // // filter page png//
 // import F3 from '../images/filterbanner.png'
@@ -82,7 +74,6 @@ import L11 from '../images/product11.png'
 // import M45 from '../images/product45.png'
 // import M46 from '../images/product46.png'
 // import M47 from '../images/product47.png'
-
 
 // //Plus Size/Filters/01 //
 
@@ -120,15 +111,11 @@ import L11 from '../images/product11.png'
 // import SB2_75 from '../images/product75.png'
 // import SB2_76 from '../images/product76.png'
 
-
-
 // Register page //
-import R1 from '../images/register.png'
-import R2 from '../images/apple.png'
-import R3 from '../images/googlee.png'
-import R4 from '../images/facebookregister.png'
-
-
+import R1 from "../images/register.png";
+import R2 from "../images/apple.png";
+import R3 from "../images/googlee.png";
+import R4 from "../images/facebookregister.png";
 
 // import L17 from '../images/logo.png'
 // import L18 from '../images/search.png'
@@ -139,12 +126,12 @@ import R4 from '../images/facebookregister.png'
 // import L23 from '../images/facebook.png'
 // import L24 from '../images/pinterset.png'
 // import L25 from '../images/tiktok.png'
-// import L26 from '../images/herobanner.png'
+import herobanner from '../images/herobanner.png'
 // import L27 from '../images/arrowforward.png'
 // import L28 from '../images/copyright.png'
 // import L29 from '../images/footerchatbox.png'
 // import L30 from '../images/arrowforward.png'
-// import L31 from '../images/Sustainability.png'
+import L31 from '../images/sustainability.jpg'
 
 // // landing page ends//
 
@@ -153,7 +140,6 @@ import R4 from '../images/facebookregister.png'
 // import C32 from '../images/product18.png'
 
 // //Desktop/Landing/Collection Menu page end//
-
 
 // // Desktop/Landing/New in Menu page start//
 
@@ -192,7 +178,6 @@ import R4 from '../images/facebookregister.png'
 
 // // filter page png //
 
-
 // // Desktop/Shop All/Filters/01  page start //
 // import F50 from '../images/filterbanner.png'
 
@@ -218,7 +203,6 @@ import R4 from '../images/facebookregister.png'
 
 // //Desktop/Product/Modiweek page end //
 
-
 // //Plus Size/Filters/01  page start //
 
 // import PS63 from '../images/plussizefilterbanner1.png'
@@ -232,7 +216,6 @@ import R4 from '../images/facebookregister.png'
 // import PS70 from '../images/product53.png'
 
 // // Desktop/Plus Size/Filters/01  page end
-
 
 // // Desktop/Plus Size/Filters/02 page start //
 // import PS2_71 from '../images/product54.png'
@@ -275,23 +258,23 @@ import R4 from '../images/facebookregister.png'
 
 // //Desktop/ Sustainability/02 page end //
 
-
-
 // Desktop/Register/01  page start //
-import R94 from '../images/register.png'
-import R95 from '../images/apple.png'
-import R96 from '../images/facebookregister.png'
-import R97 from '../images/googlee.png'
+import R94 from "../images/register.png";
+import R95 from "../images/apple.png";
+import R96 from "../images/facebookregister.png";
+import R97 from "../images/googlee.png";
 
 // Desktop/Register/01 page end //
-
 
 // R1-
 // SB-
 
-
-
 const IMAGES = {
+    registerOne: R1,
+    registerTwo: R2,
+    registerThree: R3,
+    registerFour: R4,
+
 
     registerOne: R1,
     registerTwo: R2,
@@ -310,6 +293,10 @@ const IMAGES = {
     imgTwo: L2,
     imgThree: L3,
 
+    // herobanner//
+
+    herobanner: herobanner,
+
 
     // Modiweek //
     ModiweekOne: L8,
@@ -320,9 +307,35 @@ const IMAGES = {
 
 
     //Sustainability banner//
-    // Sustainability: L31
+    sustainability: L31,
 
 
+    RegisteImage: R94,
+    Apple: R95,
+    facebook: R96,
+    google: R97,
+
+
+    searchOne: S30,
+    searchTwo: S31,
+    searchThree: S32,
+    searchFour: S33,
+    searchFive: S34,
+    searchSix: S35,
+    Weblogo: Weblogo,
+    headerIcon1: headerIcon1,
+    headerIcon2: headerIcon2,
+    //  headerIcon3: headerIcon3,
+    headerIcon4: headerIcon4,
+
+    // Landing page Modimal images start  //
+    ModimalOne: L12,
+    ModimalTwo: L13,
+    ModimalThree: L14,
+    ModimalFour: L15,
+    ModimalFive: L16,
 }
-export default IMAGES
 
+
+
+export default IMAGES;

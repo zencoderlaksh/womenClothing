@@ -1,18 +1,21 @@
+
 import React from 'react'
-import Register from './pages/Register'
-import Login from './pages/Login'
-import SellerProductCart from './pages/Home/component/sellerproductcart/SellerProductCart'
-import Home from './pages/Home/Home'
+
+import AppRoutes from './Routes/AppRoutes';
+
 
 
 
 const App = () => {
   return (
     <>
-      <Home />
+
+    
+
+      <AppRoutes />
+
     </>
-  )
-}
+  );
+};
 
-export default App
-
+export default App;

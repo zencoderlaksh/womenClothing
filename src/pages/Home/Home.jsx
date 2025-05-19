@@ -1,25 +1,19 @@
 import React from 'react'
-
-import SellerProductCart from './component/sellerproductcart/SellerProductCart'
 import Collection from './component/collectionproduct/Collection'
-import ModiweekCart from './component/Modiweek/ModiweekCart'
-import Login from '../Login'
-import Register from '../Register'
-
-// import SustainabilityBanner from './component/Sustainabilitybanner/SustainabilityBanner'
-
-
+import SellerProductCart from './component/sellerproductcart/SellerProductCart'
+import LandingpageHeroBanner from './component/LandinPageHeroBanner/LandingpageHeroBanner'
+import ModiweekCart from './component/ModiweekCart/ModiweekCart'
+import LadingPageBanner from './component/SustainabilityBanner/LadingPageBanner'
+import LandingModimal from './component/ModimalCart/LandingModimal'
 
 const Home = () => {
-
     return (
-        <>
+        <>  <LandingpageHeroBanner />
             <SellerProductCart />
             <Collection />
             <ModiweekCart />
-            {/* <SustainabilityBanner /> */}
-            <Login />
-            <Register />
+            <LadingPageBanner />
+            <LandingModimal />
 
 
         </>
