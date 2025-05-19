@@ -3,8 +3,8 @@
 import L1 from "../images/logo.png";
 import headerIcon1 from "../images/search.png";
 import headerIcon2 from "../images/person.png";
-// import headerIcon3 from "../images/shopping_bag";
-// import headerIcon4 from "../images/favorite.png";
+import headerIcon3 from "../images/shopping_bag.png";
+import headerIcon4 from "../images/favorite.png";
 // import L1 from '../images/instagarm.png'
 // import L1 from '../images/facebook.png'
 // import L1 from '../images/pinterset.png'
@@ -120,14 +120,14 @@ import R4 from "../images/facebookregister.png";
 // import L19 from '../images/person.png'
 // import L20 from '../images/shoppinbag.png'
 // import L21 from '../images/favorite.png'
-// import L22 from '../images/instagarm.png'
-// import L23 from '../images/facebook.png'
-// import L24 from '../images/pinterset.png'
-// import L25 from '../images/tiktok.png'
+import L22 from '../images/instagram.png'
+import L23 from '../images/facebook.png'
+import L24 from '../images/pinterest.png'
+import L25 from '../images/tiktok.png'
 // import L26 from '../images/herobanner.png'
-// import L27 from '../images/arrowforward.png'
-// import L28 from '../images/copyright.png'
-// import L29 from '../images/footerchatbox.png'
+import L27 from '../images/arrowforward.png'
+import L28 from '../images/copyright.png'
+import L29 from '../images/footerchatbox.png'
 // import L30 from '../images/arrowforward.png'
 // import L31 from '../images/Sustainability.png'
 
@@ -287,7 +287,17 @@ const IMAGES = {
   Weblogo: L1,
   headerIcon1: headerIcon1,
   headerIcon2: headerIcon2,
-  //   headerIcon3: headerIcon3,
-  //   headerIcon4: headerIcon4,
+  headerIcon3: headerIcon3,
+  headerIcon4: headerIcon4,
+
+  // footer images
+
+  instagram: L22,
+  facebook: L23,
+  pinterest: L24,
+  tiktok: L25,
+  copyright: L28,
+  footerchatbox: L29,
+  arrowforward: L27
 };
 export default IMAGES;

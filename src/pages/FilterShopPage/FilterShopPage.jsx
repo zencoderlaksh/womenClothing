@@ -1,11 +1,10 @@
 import React from 'react'
-import SearchCards from '../../../../components/SearchCart/SearchCards'
-import IMAGES from '../../../../assets/images/projectImage'
-import Filters from '../../../../components/Filters/Filters'
+import SearchCards from '../../components/SearchCart/SearchCards'
+import IMAGES from '../../assets/images/projectImage'
+import Filters from '../../components/Filters/Filters'
 
-const SearchProduct = () => {
-
-  const DataProduct = [
+const FilterShopPage = () => {
+    const DataProduct = [
     {
       id: 1,
       img: IMAGES.searchOne,
@@ -39,7 +38,7 @@ const SearchProduct = () => {
       title: 'High Tillie',
       content: 'Turn It Up Pants',
       price: '$110',
-      color:['#0C0C0C','#909225','#748C70']
+       color:['#0C0C0C','#909225','#748C70']
     },
 
     {
@@ -86,4 +85,4 @@ const SearchProduct = () => {
   )
 }
 
-export default SearchProduct
+export default FilterShopPage
