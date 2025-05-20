@@ -1,6 +1,6 @@
 // L1 icons all//
 
-import L1 from "../images/logo.png";
+import Weblogo from "../images/logo.png";
 import headerIcon1 from "../images/search.png";
 import headerIcon2 from "../images/person.png";
 import headerIcon3 from "../images/shopping_bag.png";
@@ -14,26 +14,28 @@ import headerIcon4 from "../images/favorite.png";
 // import L1 from '../images/copyright.png'
 // import L1 from '../images/footerchatbox.png'
 // import L1 from '../images/arrowforward.png'
-// import L1 from '../images/Sustainability.png'
+
 
 // // lading page start//
 
-// import L1 from '../images/product1.png'
-// import L2 from '../images/product2.png'
-// import L3 from '../images/product3.png'
-// import L4 from '../images/product4.png'
-// import L5 from '../images/product5.png'
-// import L6 from '../images/product6.png'
-// import L7 from '../images/product7.png'
-// import L8 from '../images/product8.png'
-// import L9 from '../images/product9.png'
-// import L10 from '../images/product10.png'
-// import L11 from '../images/product11.png'
-// import L12 from '../images/product12.png'
-// import L13 from '../images/product13.png'
-// import L14 from '../images/product14.png'
-// import L15 from '../images/product15.png'
-// import L16 from '../images/product16.png'
+import L1 from '../images/product1.png'
+import L2 from '../images/product2.png'
+import L3 from '../images/product3.png'
+
+import L4 from '../images/product4.png'
+import L5 from '../images/product5.png'
+import L6 from '../images/product6.png'
+import L7 from '../images/product7.jpg'
+
+import L8 from '../images/product8.png'
+import L9 from '../images/product9.png'
+import L10 from '../images/product10.png'
+import L11 from '../images/product11.png'
+import L12 from '../images/product12.png'
+import L13 from '../images/product13.png'
+import L14 from '../images/product14.png'
+import L15 from '../images/product15.png'
+import L16 from '../images/product16.png'
 
 // import C17 from '../images/product17.png'
 // import C18 from '../images/product18.png'
@@ -129,7 +131,7 @@ import L27 from '../images/arrowforward.png'
 import L28 from '../images/copyright.png'
 import L29 from '../images/footerchatbox.png'
 // import L30 from '../images/arrowforward.png'
-// import L31 from '../images/Sustainability.png'
+import L31 from '../images/sustainability.jpg'
 
 // // landing page ends//
 
@@ -268,15 +270,51 @@ import R97 from "../images/googlee.png";
 // SB-
 
 const IMAGES = {
-  registerOne: R1,
-  registerTwo: R2,
-  registerThree: R3,
-  registerFour: R4,
+    registerOne: R1,
+    registerTwo: R2,
+    registerThree: R3,
+    registerFour: R4,
 
-  RegisteImage: R94,
-  Apple: R95,
-  facebook: R96,
-  google: R97,
+
+    registerOne: R1,
+    registerTwo: R2,
+    registerThree: R3,
+    registerFour: R4,
+
+
+    RegisteImage: R94,
+    Apple: R95,
+    facebook: R96,
+    google: R97,
+
+
+
+    imgOne: L1,
+    imgTwo: L2,
+    imgThree: L3,
+
+    // herobanner//
+
+    herobanner: herobanner,
+
+
+    // Modiweek //
+    ModiweekOne: L8,
+    ModiweekTwo: L9,
+    ModiweekThree: L10,
+    ModiweekFour: L11,
+
+
+
+    //Sustainability banner//
+    sustainability: L31,
+
+
+    RegisteImage: R94,
+    Apple: R95,
+    facebook: R96,
+    google: R97,
+
 
   searchOne: S30,
   searchTwo: S31,

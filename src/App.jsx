@@ -1,13 +1,19 @@
-import React from "react";
-import Home from "./pages/Home/Home";
-import AppRoutes from "./routes/AppRoutes";
-import Header from "./layout/Header";
-import Footer from "./layout/Footer";
+
+import React from 'react'
+
+import AppRoutes from './Routes/AppRoutes';
+
+
+
 
 const App = () => {
   return (
     <>
+
+    
+
       <AppRoutes />
+
     </>
   );
 };

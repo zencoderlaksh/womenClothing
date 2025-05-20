@@ -14,7 +14,7 @@ const Header = () => {
         <div className="center">
           <div className="nav-links">
             <ul>
-              <li className="flex gap-[50px]">
+              <li className="flex gap-[50px] text-[#404040]">
                 <a href="">Collection</a>
                 <a href="">NewIn</a>
                 <a href="">ModiWeek</a>
