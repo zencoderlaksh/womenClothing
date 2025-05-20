@@ -28,7 +28,7 @@ const Header = () => {
           <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon1} alt="" />
           <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon2} alt="" />
           <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon4} alt="" />
-          <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon2} alt="" />
+          <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon3} alt="" />
         </div>
       </div>
     </div>

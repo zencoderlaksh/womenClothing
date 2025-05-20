@@ -3,7 +3,7 @@
 import Weblogo from "../images/logo.png";
 import headerIcon1 from "../images/search.png";
 import headerIcon2 from "../images/person.png";
-// import headerIcon3 from "../images/shopping_bag";
+import headerIcon3 from "../images/shopping_bag.png";
 import headerIcon4 from "../images/favorite.png";
 // import L1 from '../images/instagarm.png'
 // import L1 from '../images/facebook.png'
@@ -122,14 +122,14 @@ import R4 from "../images/facebookregister.png";
 // import L19 from '../images/person.png'
 // import L20 from '../images/shoppinbag.png'
 // import L21 from '../images/favorite.png'
-// import L22 from '../images/instagarm.png'
-// import L23 from '../images/facebook.png'
-// import L24 from '../images/pinterset.png'
-// import L25 from '../images/tiktok.png'
-import herobanner from '../images/herobanner.png'
-// import L27 from '../images/arrowforward.png'
-// import L28 from '../images/copyright.png'
-// import L29 from '../images/footerchatbox.png'
+import L22 from '../images/instagram.png'
+import L23 from '../images/facebook.png'
+import L24 from '../images/pinterest.png'
+import L25 from '../images/tiktok.png'
+// import L26 from '../images/herobanner.png'
+import L27 from '../images/arrowforward.png'
+import L28 from '../images/copyright.png'
+import L29 from '../images/footerchatbox.png'
 // import L30 from '../images/arrowforward.png'
 import L31 from '../images/sustainability.jpg'
 
@@ -316,26 +316,26 @@ const IMAGES = {
     google: R97,
 
 
-    searchOne: S30,
-    searchTwo: S31,
-    searchThree: S32,
-    searchFour: S33,
-    searchFive: S34,
-    searchSix: S35,
-    Weblogo: Weblogo,
-    headerIcon1: headerIcon1,
-    headerIcon2: headerIcon2,
-    //  headerIcon3: headerIcon3,
-    headerIcon4: headerIcon4,
+  searchOne: S30,
+  searchTwo: S31,
+  searchThree: S32,
+  searchFour: S33,
+  searchFive: S34,
+  searchSix: S35,
+  Weblogo: L1,
+  headerIcon1: headerIcon1,
+  headerIcon2: headerIcon2,
+  headerIcon3: headerIcon3,
+  headerIcon4: headerIcon4,
 
-    // Landing page Modimal images start  //
-    ModimalOne: L12,
-    ModimalTwo: L13,
-    ModimalThree: L14,
-    ModimalFour: L15,
-    ModimalFive: L16,
-}
+  // footer images
 
-
-
+  instagram: L22,
+  facebook: L23,
+  pinterest: L24,
+  tiktok: L25,
+  copyright: L28,
+  footerchatbox: L29,
+  arrowforward: L27
+};
 export default IMAGES;

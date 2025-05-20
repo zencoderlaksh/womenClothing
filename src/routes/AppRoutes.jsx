@@ -10,6 +10,8 @@ import PlusSize from "../pages/PlusSize/PlusSize";
 import Sustainliblity from "../pages/Sustainiblity/Sustainliblity";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
+import SearchProduct from "../pages/Home/component/Search/SearchProduct";
+import FilterShopPage from "../pages/FilterShopPage/FilterShopPage";
 
 const AppRoutes = () => {
   return (
@@ -26,6 +28,8 @@ const AppRoutes = () => {
         <Route path="/modiweek" element={<ModiWeek />} />
         <Route path="/plussize" element={<PlusSize />} />
         <Route path="/sustainability" element={<Sustainliblity />} />
+        <Route path='/searchproduct' element={<SearchProduct/>}/>
+        <Route path="/filtershoppage" element={<FilterShopPage/>}/>
       </Route>
     </Routes>
   );
