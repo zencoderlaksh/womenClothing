@@ -1,7 +1,7 @@
 import React from 'react'
-import SearchCards from '../../../../components/SearchCart/SearchCards'
-import IMAGES from '../../../../assets/images/projectImage'
-import Filters from '../../../../components/Filters/Filters'
+import SearchCards from '../../components/SearchCart/SearchCards'
+import IMAGES from '../../assets/images/projectImage'
+import Filters from '../../components/Filters/Filters'
 
 const SearchProduct = () => {
 
@@ -63,7 +63,7 @@ const SearchProduct = () => {
   return (
     <>
       <div className='lg:flex'>
-        <div className="card-left bg-white ml-4 sm:ml-6 md:ml-59 lg:ml-20 lg:w-[30%]">
+        <div className="card-left bg-white ml-4 sm:ml-6 md:ml-59 lg:ml-18 mt-5 lg:w-[30%]">
           <Filters></Filters>
         </div>
         <div className='card-data lg:mx-auto flex items-center justify-center gap-5 flex-wrap px-3'>

@@ -15,7 +15,7 @@ const SearchCards = (props) => {
                         <p className='font-normal text-base text-[#0C0C0C] ml-2'>{props.content}</p>
                         <h6 className='font-bold text-base text-[#0C0C0C] mr-2'>{props.price}</h6>
                     </div>
-                    <div className="color-cart flex gap-3">
+                    <div className="color-cart flex gap-3 ml-2">
                         {props.color && props.color.length > 0 ? (
                             props.color.map((colorValue, i) => {
                                 return (
