@@ -5,15 +5,22 @@ import LandingpageHeroBanner from './component/LandinPageHeroBanner/LandingpageH
 import ModiweekCart from './component/ModiweekCart/ModiweekCart'
 import LadingPageBanner from './component/SustainabilityBanner/LadingPageBanner'
 import LandingModimal from './component/ModimalCart/LandingModimal'
+import FilterShopPage from '../FilterShopPage/FilterShopPage'
+import PlusSize from '../PlusSize/PlusSize'
+
 
 const Home = () => {
     return (
-        <>  <LandingpageHeroBanner />
+        <>
+
+            {/* <LandingpageHeroBanner />
             <SellerProductCart />
             <Collection />
             <ModiweekCart />
             <LadingPageBanner />
-            <LandingModimal />
+            <LandingModimal /> */}
+            {/* <FilterShopPage/> */}
+            {/* <PlusSize/> */}
 
 
         </>
