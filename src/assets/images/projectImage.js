@@ -69,9 +69,9 @@ import F41 from '../images/product41.png'
 // import F2_42 from '../images/product42.png'
 // import F2_43 from '../images/product43.png'
 // import F2_44 from '../images/product44.png'
-// import M45 from '../images/product45.png'
-// import M46 from '../images/product46.png'
-// import M47 from '../images/product47.png'
+import M45 from '../images/product45.jpg'
+import M46 from '../images/product46.png'
+import M47 from '../images/product47.png'
 
 // //Plus Size/Filters/01 //
 
@@ -303,22 +303,30 @@ const IMAGES = {
 
   // FilterShopPage
 
-      filterShopOne: F36,
-      filterShopTwo: F37,
-      filterShopThree: F38,
-      filterShopFour: F39,
-      filterShopFive: F40,
-      filterShopSix: F41,
-      filterBanner: F3,
+  filterShopOne: F36,
+  filterShopTwo: F37,
+  filterShopThree: F38,
+  filterShopFour: F39,
+  filterShopFive: F40,
+  filterShopSix: F41,
+  filterBanner: F3,
 
-      // plussize
+  // plussize
 
-      plussizefilterbanner: plussizefilterbanner1,
-      plusSizeOne: PS48,
-      plusSizeTwo: PS49,
-      plusSizeThree: PS50,
-      plusSizeFour: PS51,
-      plusSizeFive: PS52,
-      plusSizeSix: PS53,
+  plussizefilterbanner: plussizefilterbanner1,
+  plusSizeOne: PS48,
+  plusSizeTwo: PS49,
+  plusSizeThree: PS50,
+  plusSizeFour: PS51,
+  plusSizeFive: PS52,
+  plusSizeSix: PS53,
+
+
+  // modiweekpageimages//
+  modiweek1: M45,
+  modiweek2: M46,
+  modiweek3: M47,
+
+
 };
 export default IMAGES;

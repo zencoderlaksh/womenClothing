@@ -13,6 +13,7 @@ import Register from "../pages/Auth/Register";
 import SearchProduct from "../pages/Search/SearchProduct";
 // import WishListPage from "../pages/Favourite/WishListPage";
 import FilterShopPage from "../pages/FilterShopPage/FilterShopPage";
+import ModiWeekPage from "../pages/ModiWeek/ModiWeekPage";
 
 
 
@@ -32,6 +33,7 @@ const AppRoutes = () => {
         <Route path="/sustainability" element={<Sustainliblity />} />
         <Route path='/searchproduct' element={<SearchProduct />} />
         <Route path="/filtershoppage" element={<FilterShopPage />} />
+        <Route path='/modiweekpage' element={<ModiWeekPage/>}/>
       </Route>
     </Routes>
   );
