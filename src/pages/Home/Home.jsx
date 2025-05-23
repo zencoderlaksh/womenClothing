@@ -13,14 +13,14 @@ const Home = () => {
     return (
         <>
 
-            {/* <LandingpageHeroBanner />
+            <LandingpageHeroBanner />
             <SellerProductCart />
             <Collection />
             <ModiweekCart />
             <LadingPageBanner />
-            <LandingModimal /> */}
-            {/* <FilterShopPage/> */}
-            {/* <PlusSize/> */}
+            <LandingModimal /> 
+             <FilterShopPage/> 
+             <PlusSize/>
 
 
         </>
