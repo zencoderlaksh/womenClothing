@@ -13,6 +13,9 @@ import Register from "../pages/Auth/Register";
 import SearchProduct from "../pages/Search/SearchProduct";
 // import WishListPage from "../pages/Favourite/WishListPage";
 import FilterShopPage from "../pages/FilterShopPage/FilterShopPage";
+import SusMaterial from "../pages/SusMaterial/SusMaterial";
+import Contact from "../pages/Contact/Contact";
+import Faqs from "../pages/Faqs/Faqs";
 
 
 
@@ -32,6 +35,10 @@ const AppRoutes = () => {
         <Route path="/sustainability" element={<Sustainliblity />} />
         <Route path='/searchproduct' element={<SearchProduct />} />
         <Route path="/filtershoppage" element={<FilterShopPage />} />
+        <Route path="/susmaterial" element={<SusMaterial />} />
+        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/faqs" element={<Faqs/>}></Route>
+
       </Route>
     </Routes>
   );
