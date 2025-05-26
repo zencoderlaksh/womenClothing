@@ -26,7 +26,7 @@ const SellerCart = (props) => {
                                         <div key={index}
                                             className='rounded-[50%] w-[30px] h-[30px] hover:scale-[1.3] decoration-[300] mt-3'
                                             style={{ backgroundColor: colorValue }}
-                                            title={{ colorValue }}
+                                            title={ colorValue }
                                         >
 
                                         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Collection from './component/collectionproduct/Collection'
+import Collection from './component/collectionproduct/Collectionproduct'
 import SellerProductCart from './component/sellerproductcart/SellerProductCart'
 import LandingpageHeroBanner from './component/LandinPageHeroBanner/LandingpageHeroBanner'
 import ModiweekCart from './component/ModiweekCart/ModiweekCart'
@@ -14,8 +14,19 @@ const Home = () => {
     return (
         <>
 
+<<<<<<< HEAD
           
           
+=======
+            <LandingpageHeroBanner />
+            <SellerProductCart />
+            <Collection />
+            <ModiweekCart />
+            <LadingPageBanner />
+            <LandingModimal />  
+            {/* <FilterShopPage/> 
+             <PlusSize/> */}
+>>>>>>> d093d833eb508fcf6900dbb8d3ee776f1d211532
 
 
         </>

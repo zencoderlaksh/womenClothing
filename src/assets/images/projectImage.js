@@ -1,6 +1,6 @@
 // L1 icons all//
 
-import L1 from "../images/logo.png";
+import Weblogo from "../images/logo.png";
 import headerIcon1 from "../images/search.png";
 import headerIcon2 from "../images/person.png";
 import headerIcon3 from "../images/shopping_bag.png";
@@ -18,17 +18,17 @@ import headerIcon4 from "../images/favorite.png";
 
 // // lading page start//
 
-// import L1 from '../images/product1.png'
-// import L2 from '../images/product2.png'
-// import L3 from '../images/product3.png'
+import L1 from '../images/product1.png'
+import L2 from '../images/product2.png'
+import L3 from '../images/product3.png'
 // import L4 from '../images/product4.png'
 // import L5 from '../images/product5.png'
 // import L6 from '../images/product6.png'
 // import L7 from '../images/product7.png'
-// import L8 from '../images/product8.png'
-// import L9 from '../images/product9.png'
-// import L10 from '../images/product10.png'
-// import L11 from '../images/product11.png'
+import L8 from '../images/product8.png'
+import L9 from '../images/product9.png'
+import L10 from '../images/product10.png'
+import L11 from '../images/product11.png'
 // import L12 from '../images/product12.png'
 // import L13 from '../images/product13.png'
 // import L14 from '../images/product14.png'
@@ -69,9 +69,9 @@ import F41 from '../images/product41.png'
 // import F2_42 from '../images/product42.png'
 // import F2_43 from '../images/product43.png'
 // import F2_44 from '../images/product44.png'
-// import M45 from '../images/product45.png'
-// import M46 from '../images/product46.png'
-// import M47 from '../images/product47.png'
+import M45 from '../images/product45.jpg'
+import M46 from '../images/product46.png'
+import M47 from '../images/product47.png'
 
 // //Plus Size/Filters/01 //
 
@@ -269,6 +269,16 @@ import R97 from "../images/googlee.png";
 // SB-
 
 const IMAGES = {
+
+  //navbar//
+   
+
+  // landing page images //
+
+  imgOne: L1,
+  imgTwo:L2,
+  imgThree:L3,
+
   registerOne: R1,
   registerTwo: R2,
   registerThree: R3,
@@ -285,7 +295,7 @@ const IMAGES = {
   searchFour: S33,
   searchFive: S34,
   searchSix: S35,
-  Weblogo: L1,
+  Weblogo: Weblogo,
   headerIcon1: headerIcon1,
   headerIcon2: headerIcon2,
   headerIcon3: headerIcon3,
@@ -302,6 +312,13 @@ const IMAGES = {
   arrowforward: L27,
 
 
+  //landing page modiweek images//
+
+
+  ModiweekOne: L8,
+  ModiweekTwo: L9,
+  ModiweekThree: L10,
+  ModiweekFour: L11,
   // FilterShopPage
 
   filterShopOne: F36,
@@ -311,6 +328,7 @@ const IMAGES = {
   filterShopFive: F40,
   filterShopSix: F41,
   filterBanner: F3,
+
 
   // plussize
 
@@ -346,5 +364,23 @@ const IMAGES = {
   susmaterialFour: SB2_92,
   susmaterialFive: SB2_93,
   
+
+  // plussize
+
+  plussizefilterbanner: plussizefilterbanner1,
+  plusSizeOne: PS48,
+  plusSizeTwo: PS49,
+  plusSizeThree: PS50,
+  plusSizeFour: PS51,
+  plusSizeFive: PS52,
+  plusSizeSix: PS53,
+
+
+  // modiweekpageimages//
+  modiweek1: M45,
+  modiweek2: M46,
+  modiweek3: M47,
+
+
 };
 export default IMAGES;
