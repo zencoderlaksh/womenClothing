@@ -14,10 +14,10 @@ const Home = () => {
     return (
         <>
 
-<<<<<<< HEAD
+
           
           
-=======
+
             <LandingpageHeroBanner />
             <SellerProductCart />
             <Collection />
@@ -26,7 +26,6 @@ const Home = () => {
             <LandingModimal />  
             {/* <FilterShopPage/> 
              <PlusSize/> */}
->>>>>>> d093d833eb508fcf6900dbb8d3ee776f1d211532
 
 
         </>
