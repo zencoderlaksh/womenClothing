@@ -9,7 +9,7 @@ import product7 from '../../../../assets/images/product7.jpg'
 
 
 
-const Collection = ({button}) => {
+const Collectionproduct = ({button}) => {
 
     return (
         <>
@@ -42,4 +42,4 @@ const Collection = ({button}) => {
     )
 }
 
-export default Collection
+export default Collectionproduct
