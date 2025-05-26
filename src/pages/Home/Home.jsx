@@ -1,5 +1,5 @@
 import React from 'react'
-import Collection from './component/collectionproduct/Collection'
+import Collection from './component/collectionproduct/Collectionproduct'
 import SellerProductCart from './component/sellerproductcart/SellerProductCart'
 import LandingpageHeroBanner from './component/LandinPageHeroBanner/LandingpageHeroBanner'
 import ModiweekCart from './component/ModiweekCart/ModiweekCart'
@@ -18,9 +18,9 @@ const Home = () => {
             <Collection />
             <ModiweekCart />
             <LadingPageBanner />
-            <LandingModimal /> 
-             <FilterShopPage/> 
-             <PlusSize/>
+            <LandingModimal />  
+            {/* <FilterShopPage/> 
+             <PlusSize/> */}
 
 
         </>
