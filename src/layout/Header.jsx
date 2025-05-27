@@ -10,6 +10,8 @@ const Header = () => {
   const [ismanuopen, setismanuopen] = useState(false)
 
 
+
+
   const tagglebutton = () => {
     setshowmenu(!showmenu)
   }
@@ -65,7 +67,7 @@ const Header = () => {
             </div>
             <input
               type="text"
-              className="w-full border-b-2 border-gray-300 py-3 rounded-md"
+              className="w-full border-b-2 border-gray-300 py-3  rounded-md"
             />
           </div>
         )
