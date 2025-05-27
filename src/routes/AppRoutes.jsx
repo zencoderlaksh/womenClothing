@@ -11,11 +11,16 @@ import Sustainliblity from "../pages/Sustainiblity/Sustainliblity";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import SearchProduct from "../pages/Search/SearchProduct";
-// import WishListPage from "../pages/Favourite/WishListPage";
+
 import FilterShopPage from "../pages/FilterShopPage/FilterShopPage";
 import ModiWeekPage from "../pages/ModiWeek/ModiWeekPage";
 import ProductOrder from "../pages/Home/component/OrderProduct/ProductOrder";
 import Collectionproduct from "../pages/Home/component/collectionproduct/Collectionproduct";
+import Essentialdress from "../pages/Home/component/PlusSizeProductOrder/Essentialdress";
+import CartPage from "../pages/Home/component/Cart/CartPage";
+import InfoPage from "../pages/Home/component/INformation/InfoPage";
+import ShippingPage from "../pages/Home/component/Shipping/ShippingPage";
+import PaymentPage from "../pages/Home/component/Payment/PaymentPage";
 
 
 
@@ -29,7 +34,7 @@ const AppRoutes = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
         <Route path="/collection" element={<Collection />} />
-        <Route path='/collectionproduct' element={<Collectionproduct/>}/>
+        <Route path='/collectionproduct' element={<Collectionproduct />} />
         <Route path="/newin" element={<NewIn />} />
         <Route path="/modiweek" element={<ModiWeek />} />
         <Route path="/plussize" element={<PlusSize />} />
@@ -37,10 +42,12 @@ const AppRoutes = () => {
         <Route path='/searchproduct' element={<SearchProduct />} />
         <Route path="/filtershoppage" element={<FilterShopPage />} />
         <Route path='/modiweekpage' element={<ModiWeekPage />} />
-        <Route path='/productOrder' element={<ProductOrder/>} />
-        {/* <Route path='/wishlist' element={<WishListPage />} /> */}
-
-
+        <Route path='/productOrder' element={<ProductOrder />} />
+        <Route path='/essentialdress' element={<Essentialdress />} />
+        <Route path='/cartpage' element={<CartPage />} />
+        <Route path='/infopage' element={<InfoPage />} />
+        <Route path='/shippingpage' element={<ShippingPage />} />
+        <Route path='/paymentpage' element={<PaymentPage />} />
       </Route>
     </Routes>
   );

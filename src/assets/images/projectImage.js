@@ -5,6 +5,11 @@ import headerIcon1 from "../images/search.png";
 import headerIcon2 from "../images/person.png";
 import headerIcon3 from "../images/shopping_bag.png";
 import headerIcon4 from "../images/favorite.png";
+import visa from "../images/visalogo.png";
+import International from '../images/International.png'
+import Masterrcard from '../images/Masterrcard.png'
+import amex from '../images/amex.png'
+
 // import L1 from '../images/instagarm.png'
 // import L1 from '../images/facebook.png'
 // import L1 from '../images/pinterset.png'
@@ -224,9 +229,9 @@ import L29 from '../images/footerchatbox.png'
 // // Desktop/Plus Size/Filters/02 page end //
 
 // // Desktop/Plus size Prouduct order pagr start //
-// import PO75 from '../images/product58.png'
-// import PO76 from '../images/product59.png'
-// import PO77 from '../images/product60.png'
+import PO75 from '../images/product58.jpg'
+import PO76 from '../images/product59.png'
+import PO77 from '../images/product60.png'
 
 // // Desktop/Plus size Prouduct order pag end //
 
@@ -270,13 +275,13 @@ import R97 from "../images/googlee.png";
 const IMAGES = {
 
   //navbar//
-   
+
 
   // landing page images //
 
   imgOne: L1,
-  imgTwo:L2,
-  imgThree:L3,
+  imgTwo: L2,
+  imgThree: L3,
 
   registerOne: R1,
   registerTwo: R2,
@@ -338,12 +343,23 @@ const IMAGES = {
   plusSizeFive: PS52,
   plusSizeSix: PS53,
 
+  // plussize2//
+  essentialdressOne: PO75,
+  essentialdressTwo: PO76,
+  essentialdressThree: PO77,
+
+
 
   // modiweekpageimages//
   modiweek1: M45,
   modiweek2: M46,
   modiweek3: M47,
 
+  // payment//
+  visa: visa,
+  International: International,
+  Masterrcard: Masterrcard,
+  amex: amex,
 
 };
 export default IMAGES;
