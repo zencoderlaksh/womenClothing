@@ -63,7 +63,7 @@ const PlusSize = ({button}) => {
     <>
       <div>
                 <div>
-                    <img className='mt-10' src={IMAGES.plussizefilterbanner} alt="" />
+                    <img className='mt-10 w-screen' src={IMAGES.plussizefilterbanner} alt="" />
                 </div>
                 <div className='lg:flex'>
                     <div className="card-left bg-white ml-4 sm:ml-6 md:ml-59 lg:ml-18 mt-5 lg:w-[30%]">
