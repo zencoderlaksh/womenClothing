@@ -22,9 +22,9 @@ const Header = () => {
         <div className="header-topline  py-3 flex justify-center items-center bg-[#5A6D57] text-white">
           Enjoy Free Shipping On All Orders
         </div>
-        <div className="header-container flex justify-around p-[24px] items-center">
-          <div className="left">
-            <button onClick={() => setismanuopen(!ismanuopen)} className="block md:hidden">
+        <div className="header-container flex justify-around p-[24px] items-center overflow-x-hidden">
+          <div className="left flex items-center">
+            <button onClick={() => setismanuopen(!ismanuopen)} className="block md:hidden ">
               <FontAwesomeIcon icon={ismanuopen ? faTimes : faBars} />
             </button>
             <img className="w-[184px] h-[46px]" src={IMAGES.Weblogo} alt="" />
@@ -42,17 +42,17 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="right flex items-center gap-[24px]">
+          <div className="right flex items-center gap-[24px] flex-nowrap">
 
             <div>
               <button onClick={tagglebutton} className="cursor-pointer">
                 <FontAwesomeIcon
                   icon={showmenu ? faTimes : faMagnifyingGlass}
-                />
+                  className="" />
               </button>
             </div>
-            <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon2} alt="" />
-            <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon4} alt="" />
+            <img className="w-[24px] h-[24px] hidden md:block" src={IMAGES.headerIcon2} alt="" />
+            <img className="w-[24px] h-[24px] " src={IMAGES.headerIcon4} alt="" />
             <img className="w-[24px] h-[24px]" src={IMAGES.headerIcon3} alt="" />
           </div>
         </div>

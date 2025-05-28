@@ -61,12 +61,12 @@ const Essentialdress = () => {
                         dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
                     >
                         {[...Array(6)].map((_, i) => (
-                            <img key={i} src={IMAGES.plusSizeFour} alt="" className='w-full h-[60px]' />
+                            <img key={i} src={IMAGES.plusSizeFour} alt="" className='w-full h-[60px] cursor-pointer' />
                         ))}
                     </div>
                     <div className="big-image w-[400px]">
                         <div className='shadow-lg'>
-                            <img src={IMAGES.plusSizeTwo} alt="" className='w-full h-[400px]' />
+                            <img src={IMAGES.plusSizeTwo} alt="" className='w-full h-[400px] cursor-pointer' />
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ const Essentialdress = () => {
                         </div>
 
                         <div className='mt-6'>
-                            <button className='w-full bg-[#5A6D57] py-3 text-white'>Add To Cart  +$160 </button>
+                            <button className='w-full bg-[#5A6D57] py-3 text-white cursor-pointer'>Add To Cart  +$160 </button>
                         </div>
 
                         <div className='flex justify-between gap-2 items-center mt-6'>

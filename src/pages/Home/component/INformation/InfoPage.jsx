@@ -6,10 +6,53 @@ import { faLessThan } from '@fortawesome/free-solid-svg-icons'
 import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import IMAGES from '../../../../assets/images/projectImage'
+import { Box, Typography } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
+
+
 
 const InfoPage = () => {
+    const steps = ['Cart', 'Info', 'Shipping', 'Payment'];
+    const currentStep = 1; // 0-based index (Info)
+
+
+
     return (
         <>
+            <div className=' container mx-auto'>
+                <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+                    {/* Return Button */}
+
+
+                    {/* Stepper */}
+                    <Box display="flex" alignItems="center" gap={1}>
+                        {steps.map((label, index) => (
+                            <React.Fragment key={label}>
+                                <Typography
+                                    variant="body1"
+                                    sx={{
+                                        fontWeight: index === currentStep ? 'bold' : 'normal',
+                                        color: index === currentStep ? 'black' : '#7E917B',
+                                    }}
+                                >
+                                    {label}
+                                </Typography>
+                                {index !== steps.length - 1 && (
+                                    <Typography variant="body1" color="#999">
+                                        /
+                                    </Typography>
+                                )}
+                            </React.Fragment>
+                        ))}
+                    </Box>
+                </Box>
+
+            </div>
+
+
+
+
             <div className=' container mx-auto w-full flex justify-between '>
                 <div className="left w-[600px] mt-[4rem] ">
 
@@ -24,8 +67,8 @@ const InfoPage = () => {
                     </div>
                     <div className='relative'>
                         <input type="Email" placeholder='Email' className='border-2 border-gray-300 rounded-[3px] w-full py-3 px-6 mt-3 ' />
-                        <FontAwesomeIcon icon={faUser} className='absolute top-7 left-2 text-[#868686]'  />
-                       
+                        <FontAwesomeIcon icon={faUser} className='absolute top-7 left-2 text-[#868686]' />
+
 
                     </div>
                     <div className='flex items-center mt-3'>
@@ -42,7 +85,7 @@ const InfoPage = () => {
                             <input className=' border-2 border-gray-300 w-full py-2 px-3 flex items-center ' type="text"
                                 placeholder='Country/region' />
 
-                            <FontAwesomeIcon icon={faTimes} className='absolute right-3' />
+                            <FontAwesomeIcon icon={faTimes} className='absolute right-3 cursor-pointer' />
                         </div>
 
                         <div className='flex gap-4 mt-3'>
@@ -59,7 +102,7 @@ const InfoPage = () => {
                             <input className=' border-2 border-gray-300 flex items-center w-full py-2 px-3 mt-3 ' type="text"
                                 placeholder='Address' />
 
-                            <FontAwesomeIcon icon={faMagnifyingGlass} className='absolute right-3 top-6' />
+                            <FontAwesomeIcon icon={faMagnifyingGlass} className='absolute right-3 top-6 cursor-pointer' />
                         </div>
 
                         <div className='relative flex justify-between items-center'>
@@ -75,7 +118,7 @@ const InfoPage = () => {
                             <input className=' border-2 border-gray-300 w-full py-2 px-3 mt-3 flex items-center' type="text"
                                 placeholder='Address' />
 
-                            <FontAwesomeIcon icon={faMobileScreenButton} className='absolute right-3 top-6' />
+                            <FontAwesomeIcon icon={faMobileScreenButton} className='absolute right-3 top-6 cursor-pointer' />
                         </div>
 
 
@@ -87,7 +130,12 @@ const InfoPage = () => {
 
                     <div>
                         <div className='flex justify-between items-center'>
-                            <button className='flex gap-2 items-center'> <FontAwesomeIcon icon={faLessThan} className='text-[#5A6D57]' />Return to cart</button>
+                            <Box display="flex" alignItems="center" sx={{ cursor: 'pointer' }} onClick={() => window.history.back()}>
+                                <ArrowBackIcon sx={{ color: '#7E917B' }} />
+                                <Typography variant="body1" sx={{ color: '#7E917B', ml: 0.5 }}>
+                                    Return To Cart
+                                </Typography>
+                            </Box>
                             <button className='bg-[#5A6D57] text-white px-5 py-2'>Continue to shipping</button>
                         </div>
                     </div>
