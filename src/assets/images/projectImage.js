@@ -237,27 +237,28 @@ import PO77 from '../images/product60.png'
 
 // //Desktop/Sustainability/01 page start //
 
-// import SB78 from '../images/product61.png'
-// import SB79 from '../images/product62.png'
-// import SB80 from '../images/product63.png'
-// import SB81 from '../images/product64.png'
+import SB77 from '../images/sustainabilitybanner.png'
+import SB78 from '../images/product61.jpg'
+import SB79 from '../images/product62.jpg'
+import SB80 from '../images/product63.jpg'
+import SB81 from '../images/product64.jpg'
 
-// import SB82 from '../images/product65.png'
-// import SB83 from '../images/product66.png'
-// import SB84 from '../images/product67.png'
-// import SB85 from '../images/product68.png'
-// import SB86 from '../images/product69.png'
-// import SB87 from '../images/product70.png'
-// import SB88 from '../images/product71.png'
+import SB82 from '../images/product65.png'
+import SB83 from '../images/product66.png'
+import SB84 from '../images/product67.png'
+import SB85 from '../images/product68.png'
+import SB86 from '../images/product69.png'
+import SB87 from '../images/product70.png'
+import SB88 from '../images/product71.png'
 
 // // Desktop/Sustainability/01 page end //
 
 // // Desktop/ Sustainability/02 page start //
-// import SB2_89 from '../images/product72.png'
-// import SB2_90 from '../images/product73.png'
-// import SB2_91 from '../images/product74.png'
-// import SB2_92 from '../images/product75.png'
-// import SB2_93 from '../images/product76.png'
+import SB2_89 from '../images/product72.png'
+import SB2_90 from '../images/product73.png'
+import SB2_91 from '../images/product74.png'
+import SB2_92 from '../images/product75.png'
+import SB2_93 from '../images/product76.png'
 
 // //Desktop/ Sustainability/02 page end //
 
@@ -339,6 +340,42 @@ const IMAGES = {
   filterShopFive: F40,
   filterShopSix: F41,
   filterBanner: F3,
+
+
+  // plussize
+
+  plussizefilterbanner: plussizefilterbanner1,
+  plusSizeOne: PS48,
+  plusSizeTwo: PS49,
+  plusSizeThree: PS50,
+  plusSizeFour: PS51,
+  plusSizeFive: PS52,
+  plusSizeSix: PS53,
+
+
+  // sustainability
+
+  susbanner: SB77,
+  susOne: SB78,
+  susTwo: SB79,
+  susThree: SB80,
+  susFour: SB81,
+  susFive: SB82,
+  susSix: SB83,
+  susSeven: SB84,
+  susEight: SB85,
+  susNine: SB86,
+  susTen: SB87,
+  susEleven: SB88,
+
+  // susmaterial
+
+  susmaterialOne: SB2_89,
+  susmaterialTwo: SB2_90,
+  susmaterialThree: SB2_91,
+  susmaterialFour: SB2_92,
+  susmaterialFive: SB2_93,
+  
 
   // plussize
 
