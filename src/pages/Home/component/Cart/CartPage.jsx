@@ -3,6 +3,7 @@ import IMAGES from '../../../../assets/images/projectImage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
+
 const CartPage = () => {
     return (
         <>
@@ -32,10 +33,10 @@ const CartPage = () => {
             </div>
             <div className='bg-[#868686] h-[1px] w-[90%] mx-auto my-4'></div>
             <div className='w-[90%] mx-auto flex justify-between'>
-                <div className='left'>
+                <div className='left flex flex-col gap-4'>
                     <div className='flex justify-between w-[600px]'>
                         <div className='image'>
-                            <img className='w-[143px] h-[162px]' src={IMAGES.ModiweekOne} alt="" />
+                            <img className='w-[143px] h-[162px] cursor-pointer' src={IMAGES.ModiweekOne} alt="" />
                         </div>
                         <div>
                             <div className='mt-2'>
@@ -47,12 +48,12 @@ const CartPage = () => {
                             </div>
                         </div>
                         <div className='mt-4'>
-                            <FontAwesomeIcon icon={faTimes} />
+                            <FontAwesomeIcon icon={faTimes} className='cursor-pointer' />
                         </div>
                     </div>
                     <div className='flex justify-between w-[600px]'>
                         <div className='image'>
-                            <img className='w-[143px] h-[162px]' src={IMAGES.ModiweekOne} alt="" />
+                            <img className='w-[143px] h-[162px] cursor-pointer' src={IMAGES.ModiweekOne} alt="" />
                         </div>
                         <div>
                             <div className='mt-2'>
@@ -64,12 +65,12 @@ const CartPage = () => {
                             </div>
                         </div>
                         <div className='mt-4'>
-                            <FontAwesomeIcon icon={faTimes} />
+                            <FontAwesomeIcon icon={faTimes} className='cursor-pointer' />
                         </div>
                     </div>
                     <div className='flex justify-between w-[600px]'>
                         <div className='image'>
-                            <img className='w-[143px] h-[162px]' src={IMAGES.ModiweekOne} alt="" />
+                            <img className='w-[143px] h-[162px] cursor-pointer' src={IMAGES.ModiweekOne} alt="" />
                         </div>
                         <div>
                             <div className='mt-2'>
@@ -81,7 +82,7 @@ const CartPage = () => {
                             </div>
                         </div>
                         <div className='mt-4'>
-                            <FontAwesomeIcon icon={faTimes} />
+                            <FontAwesomeIcon icon={faTimes} className='cursor-pointer' />
                         </div>
                     </div>
 
@@ -130,7 +131,7 @@ const CartPage = () => {
                             <p>The total amount you pay includes all applicable customs duties & taxes. We guarantee no additional charges on delivery</p>
                         </div>
                         <div className='flex justify-end items-end'>
-                            <button className='bg-[#5A6D57] px-[3.4rem] py-2 text-white'>Next</button>
+                            <button className='bg-[#5A6D57] px-[3.4rem] py-2 text-white cursor-pointer'>Next</button>
                         </div>
                     </div>
                 </div>

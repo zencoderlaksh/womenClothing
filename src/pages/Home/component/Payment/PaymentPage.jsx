@@ -9,19 +9,22 @@ const PaymentPage = () => {
     return (
         <>
 
-            <div className='container mx-auto flex gap-[393px]'>
-                <div>
-                    <h6 className='font-bold'>Billing address</h6>
+            <div className='container mx-auto w-[78%]  grid grid-cols-2'>
+                <div className='flex justify-between items-start'>
+                    <div>
+                        <h6 className='font-bold'>Billing address</h6>
+                    </div>
+
+                    <div>
+                        <h6 className='font-bold'>Payment</h6>
+                    </div>
                 </div>
 
-                <div>
-                    <h6 className='font-bold'>Payment</h6>
-                </div>
             </div>
 
-            <div className='bg-[#868686] h-[2px]'></div>
+            <div className='bg-[#868686] h-[2px] mt-[16px]'></div>
 
-            <div className='w-[90%]  flex justify-center'>
+            <div className=' w-[90%] md:grid grid-cols-2  '>
                 <div className="left container mx-auto w-[50%]">
                     <div className='container mx-auto  mt-[16px]'>
                         <div>
@@ -80,39 +83,48 @@ const PaymentPage = () => {
                 </div>
 
                 <div className="right">
-                    <div>
-                        <p>please choose your payment method</p>
+                    <div className='mt-4'>
+                        <p className='font-normal text-[16px]'>Please Choose Your Payment Method</p>
                     </div>
                     <div className='flex justify-between items-center gap-[3rem] mt-[24px]'>
-                        <img src={IMAGES.visa} alt="" />
-                        <img src={IMAGES.International} alt="" />
-                        <img src={IMAGES.Masterrcard} alt="" />
-                        <img src={IMAGES.amex} alt="" />
+                        <img src={IMAGES.visa} alt="" className='cursor-pointer' />
+                        <img src={IMAGES.International} alt="" className='cursor-pointer' />
+                        <img src={IMAGES.Masterrcard} alt="" className='cursor-pointer'/>
+                        <img src={IMAGES.amex} alt=""className='cursor-pointer' />
                     </div>
 
-                    <div className='flex items-center gap-4 mt-[32px]'>
-                        <span>Card number*</span>
-                        <input type="text" className='border-2 border-gray-300 px-8 py-2' />
+                    <div className='flex flex-col gap-5'>
+                        <div className='flex items-start gap-4 mt-[32px]'>
+                            <div><span>Card Number*</span></div>
+                            <div className='w-[500px]'> <input type="text" className='border-2 border-gray-300 w-full  py-2' /></div>
+
+                        </div>
+
+                        <div className='flex items-center gap-8 mt-[24px]'>
+                            <span>Expiry Date*</span>
+                            <div className='flex  gap-3'>
+                                <input type="text" placeholder='Month' className='border-2 border-gray-300 px-2 py-2' />
+                                <input type="text" placeholder='Year' className='border-2 border-gray-300 px-2 py-2' />
+                            </div>
+                        </div>
+
+                        <div className='flex items-center gap-4 mt-[24px]'>
+                            <div> <span>expiry date*</span></div>
+                            <div className='ml-[19px]'>
+                                <input type="text" placeholder='' className='border-2 border-gray-300 px-8 py-2' />
+                                <FontAwesomeIcon icon={faCircleExclamation} className='ml-2 scale-125' />
+                                <a href="#" className='text-[#868686] underline ml-2'>What Is This?</a>
+                            </div>
+
+                        </div>
+                        <div className='mt-[64px] w-[100%]'>
+                            <button className='bg-[#5A6D57] py-3 w-full text-white'>Pay and place order</button>
+                        </div>
+                        <div>
+                            <p className='capitalize'>by clicking on ‘pay and place order’,you agree (i) to make your purchease from global -e as marchant of record for this transaction, subject to global-e’s  term of sale;(ii) that your information will be handled by global-e in accordance with the global-e privacy policy; and (iii) that global-e will share your information (excluding the payment details)with modimal.</p>
+                        </div>
 
                     </div>
-
-                    <div className='flex justify-between items-center gap-4 mt-[24px]'>
-                        <span>expiry date*</span>
-                        <input type="text" placeholder='Month' className='border-2 border-gray-300 px-8 py-2' />
-                        <input type="text" placeholder='Year' className='border-2 border-gray-300 px-8 py-2' />
-                    </div>
-
-                    <div className='flex items-center gap-4 mt-[24px]'>
-                        <span>expiry date*</span>
-                        <input type="text" placeholder='' className='border-2 border-gray-300 px-8 py-2' />
-                        <FontAwesomeIcon icon={faCircleExclamation} />
-                        <a href="#" className='text-[#868686] underline'>what is this?</a>
-
-                    </div>
-                    <div className='mt-[64px] w-[100%]'>
-                        <button className='bg-[#5A6D57] py-3 w-full text-white'>Pay and place order</button>
-                    </div>
-                   
                 </div>
             </div>
 

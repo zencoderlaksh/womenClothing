@@ -11,7 +11,7 @@ const Colors = (props) => {
 
                                 return (
                                     <div key={index}
-                                        className='rounded-[50%] w-[30px] h-[30px] hover:scale-[1.3] decoration-[300] mt-3'
+                                        className='rounded-[50%] w-[30px] h-[30px] hover:scale-[1.3] decoration-[300] mt-3 cursor-pointer'
                                         style={{ backgroundColor: colorValue }}
                                         title={colorValue}
                                     >

@@ -7,8 +7,8 @@ const SellerCart = (props) => {
         <>
 
             <div className="relative item hover:scale-[1.05] duration-300 mt-4">
-                <img src={props.img} className='images w-[400px] h-[400px]' />
-                <i class="fa-regular fa-heart absolute top-5 right-5"></i>
+                <img src={props.img} className='images w-[400px] h-[400px] cursor-pointer' />
+                <i class="fa-regular fa-heart absolute top-5 right-5 cursor-pointer"></i>
                 <div>
                     <h6 className='font-bold'>{props.title}</h6>
 
@@ -24,7 +24,7 @@ const SellerCart = (props) => {
 
                                     return (
                                         <div key={index}
-                                            className='rounded-[50%] w-[30px] h-[30px] hover:scale-[1.3] decoration-[300] mt-3'
+                                            className='rounded-[50%] w-[30px] h-[30px] hover:scale-[1.3] decoration-[300] mt-3 cursor-pointer'
                                             style={{ backgroundColor: colorValue }}
                                             title={colorValue}
                                         >
@@ -37,14 +37,15 @@ const SellerCart = (props) => {
                         }
                     </div>
                 </div>
+                <div>
+                    <button>{props.button}</button>
+                </div>
+
 
             </div>
 
-            <div>
-                <button>{props.button}</button>
-            </div>
 
-           
+
         </>
     )
 }

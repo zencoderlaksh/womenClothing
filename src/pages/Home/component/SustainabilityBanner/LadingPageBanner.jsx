@@ -9,7 +9,7 @@ const LadingPageBanner = () => {
         <div className=' md:px-[20px] mb-[95px] mr-[108px]'>
           <p className='leading-10 font-normal'>Stylish sustainability in clothing promotes eco-friendly <br /> choices for a greater future</p>
           <div className=' flex items-end justify-end mr-[43px] gap[12px]'>
-            <button className=' bg-white py-3 px-16 font-normal'>Sustainability</button>
+            <button className=' bg-white py-3 px-16 font-normal cursor-pointer'>Sustainability</button>
           </div>
         </div>
       </div>

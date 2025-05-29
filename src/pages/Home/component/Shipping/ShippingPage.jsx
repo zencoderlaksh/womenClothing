@@ -1,11 +1,43 @@
 import { faLessThan, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import IMAGES from '../../../../assets/images/projectImage'
-import React from 'react'
+import { Box, Typography } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import React from 'react';
 
 const ShippingPage = () => {
+    const steps = ['Cart', 'Info', 'Shipping', 'Payment'];
+    const currentStep = 1; // 0-based index (Info)
+
     return (
         <>
+
+            <div className=' container mx-auto'>
+                <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+                  
+                    <Box display="flex" alignItems="center" gap={1}>
+                        {steps.map((label, index) => (
+                            <React.Fragment key={label}>
+                                <Typography
+                                    variant="body1"
+                                    sx={{
+                                        fontWeight: index === currentStep ? 'bold' : 'normal',
+                                        color: index === currentStep ? 'black' : '#7E917B',
+                                    }}
+                                >
+                                    {label}
+                                </Typography>
+                                {index !== steps.length - 1 && (
+                                    <Typography variant="body1" color="#999">
+                                        /
+                                    </Typography>
+                                )}
+                            </React.Fragment>
+                        ))}
+                    </Box>
+                </Box>
+
+            </div>
             <div className="container mx-auto flex justify-between">
                 <div className="left w-[600px] mt-[7rem]">
                     <div className='flex justify-between items-center gap-3'>
@@ -73,7 +105,12 @@ const ShippingPage = () => {
 
                     <div>
                         <div className='flex justify-between items-center mt-6'>
-                            <button className='flex gap-2 items-center text-[#5A6D57]'> <FontAwesomeIcon icon={faLessThan} className='text-[#5A6D57]' />Return to information</button>
+                            <Box display="flex" alignItems="center" sx={{ cursor: 'pointer' }} onClick={() => window.history.back()}>
+                                <ArrowBackIcon sx={{ color: '#7E917B' }} />
+                                <Typography variant="body1" sx={{ color: '#7E917B', ml: 0.5 }}>
+                                    Return To Cart
+                                </Typography>
+                            </Box>
                             <button className='bg-[#5A6D57] text-white px-5 py-2'>Continue To Payment</button>
                         </div>
                     </div>

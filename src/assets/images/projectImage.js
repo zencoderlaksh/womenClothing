@@ -34,11 +34,11 @@ import L8 from '../images/product8.png'
 import L9 from '../images/product9.png'
 import L10 from '../images/product10.png'
 import L11 from '../images/product11.png'
-// import L12 from '../images/product12.png'
-// import L13 from '../images/product13.png'
-// import L14 from '../images/product14.png'
-// import L15 from '../images/product15.png'
-// import L16 from '../images/product16.png'
+import L12 from '../images/product12.png'
+import L13 from '../images/product13.png'
+import L14 from '../images/product14.png'
+import L15 from '../images/product15.png'
+import L16 from '../images/product16.png'
 
 // import C17 from '../images/product17.png'
 // import C18 from '../images/product18.png'
@@ -139,29 +139,29 @@ import L29 from '../images/footerchatbox.png'
 // // landing page ends//
 
 // // Desktop/Landing/Collection Menu page start//
-// import C31 from '../images/product17.png'
-// import C32 from '../images/product18.png'
+import C31 from '../images/product17.png'
+import C32 from '../images/product18.png'
 
 // //Desktop/Landing/Collection Menu page end//
 
 // // Desktop/Landing/New in Menu page start//
 
-// import N33 from '../images/product19.png'
-// import N34 from '../images/product20.png'
+import N33 from '../images/product19.png'
+import N34 from '../images/product20.png'
 
 // // Desktop/Landing/New in Menu page end//
 
 // // Desktop/Landing/Plus Size Menu page start //
 
-// import PS35 from '../images/product21.png'
-// import PS36 from '../images/product22.png'
-// import PS37 from '../images/product23.png'
+import PS35 from '../images/product21.jpg'
+import PS36 from '../images/product22.png'
+import PS37 from '../images/product23.png'
 
 // // Desktop/Landing/Plus Size Menu page end//
 
 // // Desktop/Landing/Sustainability Menu page start //
-// import SM38 from '../images/product24.png'
-// import SM39 from '../images/product25.png'
+import SM38 from '../images/product24.png'
+import SM39 from '../images/product25.png'
 // import SM40 from '../images/product26.png'
 // import SM41 from '../images/product27.png'
 // import SM42 from '../images/product28.png'
@@ -306,6 +306,13 @@ const IMAGES = {
   headerIcon3: headerIcon3,
   headerIcon4: headerIcon4,
 
+  // landingpage modimal images//
+  ModimalOne:L12,
+  ModimalTwo:L13,
+  ModimalThree:L14,
+  ModimalFour:L15,
+  ModimalFive:L16,
+
   // footer images
 
   instagram: L22,
@@ -398,5 +405,27 @@ const IMAGES = {
   Masterrcard: Masterrcard,
   amex: amex,
 
+
+  // collectionMenuPage//
+
+  CollectionImgOne: C31,
+  CollectionImgTwo: C32,
+
+
+  // NEWINMENUPAGEIMAGES//
+  NewInMenuImgOne: N33,
+  NewInMenuImgTwo: N34,
+
+
+  // plussizemenupageimages//
+  PlusSizeMenuImgOne: PS35,
+  PlusSizeMenuImgTwo: PS36,
+  PlusSizeMenuImgThree: PS37,
+
+
+  //Sustainability Menu page images/
+
+  SustainbilityMenuImgOne: SM38,
+  SustainbilityMenuImgTwo: SM39
 };
 export default IMAGES;
