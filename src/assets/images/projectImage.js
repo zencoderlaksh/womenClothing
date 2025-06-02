@@ -1,5 +1,6 @@
 // L1 icons all//
 
+
 import Weblogo from "../images/logo.png";
 import headerIcon1 from "../images/search.png";
 import headerIcon2 from "../images/person.png";
@@ -237,7 +238,7 @@ import PO77 from '../images/product60.png'
 
 // //Desktop/Sustainability/01 page start //
 
-import SB77 from '../images/sustainabilitybanner.png'
+import SB77 from '../images/sustainabilitybanner.jpg'
 import SB78 from '../images/product61.jpg'
 import SB79 from '../images/product62.jpg'
 import SB80 from '../images/product63.jpg'

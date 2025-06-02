@@ -14,7 +14,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const InfoPage = () => {
     const steps = ['Cart', 'Info', 'Shipping', 'Payment'];
-    const currentStep = 1; // 0-based index (Info)
+    const currentStep = 1; 
 
 
 
@@ -22,10 +22,10 @@ const InfoPage = () => {
         <>
             <div className=' container mx-auto'>
                 <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-                    {/* Return Button */}
+                    
 
 
-                    {/* Stepper */}
+                    
                     <Box display="flex" alignItems="center" gap={1}>
                         {steps.map((label, index) => (
                             <React.Fragment key={label}>
