@@ -13,41 +13,42 @@ const Register = () => {
         </div>
 
         <div className="right mt-[-80px] sm:mt-[-100px] ml-[-5px] md:mt-30 md:ml-8 flex justify-center">
-          <div className="container">
+          <div className="container flex flex-col items-center">
             <div className="sm:mx-auto flex items-center justify-center md:mx-auto">
               <h3 className="text-[32px] sm: font-bold mb-4 ml-[-10px] md:text-[32px] text-center">
                 Create Account
               </h3>
             </div>
-            <div className="input-container">
+            <div className="input-container ">
               <input
                 type="text"
                 placeholder="First Name "
-                className="inp1 border-1 border-gray-400 w-[400px] px-[10px] py-[15px] mb-2 text-[#606060]"
+                className="inp1 border-1 border-gray-400 w-[350px] sm:w-[400px] px-[10px] py-[15px] mb-2 text-[#606060]"
               />{" "}
               <br />
               <input
                 type="text"
                 placeholder="Last Name "
-                className="inp1 border-1 border-gray-400 w-[400px] px-[10px] py-[15px] mb-2  text-[#606060]"
+                className="inp1 border-1 border-gray-400 w-[350px] sm:w-[400px] px-[10px] py-[15px] mb-2  text-[#606060]"
               />{" "}
               <br />
               <input
                 type="text"
                 placeholder="Email"
-                className="inp1  border-1 border-gray-400   w-[400px] px-[10px] py-[15px] mb-2 text-[#606060]"
+                className="inp1  border-1 border-gray-400 w-[350px] sm:w-[400px] px-[10px] py-[15px] mb-2 text-[#606060]"
               />{" "}
               <br />
               <input
                 type="password"
                 placeholder="Password"
-                className="inp2 border-1 border-gray-400  w-[400px] px-[10px] py-[15px] text-[#606060] "
+                className="inp2 border-1 border-gray-400 w-[350px] sm:w-[400px] px-[10px] py-[15px] text-[#606060] "
               />
-            </div>
-            <div className="button">
-              <button className="btn bg-[#5A6D57] text-[#FFFFFF] flex items-center justify-center w-[400px] px-[10px] py-[15px] mt-4">
-                Register Now
-              </button>
+
+              <div className="button">
+                <button className="btn bg-[#5A6D57] text-[#FFFFFF] flex items-center justify-center w-[350px] sm:w-[400px] px-[10px] py-[15px] mt-4">
+                  Register Now
+                </button>
+              </div>
             </div>
 
             <div className="flex justify-center gap-10 mt-[20px] ml-[-5px]">
@@ -68,15 +69,15 @@ const Register = () => {
               <img src={IMAGES.registerThree} alt="" />
               <img src={IMAGES.registerFour} alt="" />
             </div>
-            <div>
+            <div className="text-center">
               <p className="text-xs mt-[25px] ml-[40px] text-[#0C0C0C]">
                 By Clicking Register Now’’you Agree To{" "}
                 <span className="text-[#748C70] underline underline-offset-[1px]">
                   <a href="#">Terms& Conditions</a>
                 </span>{" "}
-                And <br />{" "}
-                <span className="text-[#748C70] underline underline-offset-[1px] ml-[120px]">
-                  <a href="#">Privacy Policy.</a>
+                And 
+                <span className="text-[#748C70] underline underline-offset-[1px]">
+                  <a href="#"> Privacy Policy.</a>
                 </span>{" "}
               </p>
             </div>
