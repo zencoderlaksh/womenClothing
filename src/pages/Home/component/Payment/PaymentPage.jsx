@@ -9,23 +9,23 @@ const PaymentPage = () => {
     return (
         <>
 
-            <div className='container mx-auto w-[78%]  grid grid-cols-2'>
-                <div className='flex justify-between items-start'>
-                    <div>
-                        <h6 className='font-bold'>Billing address</h6>
-                    </div>
 
-                    <div>
-                        <h6 className='font-bold'>Payment</h6>
-                    </div>
+            <div className='mx-auto flex w-[90%] '>
+                <div className='w-[50%]'>
+                    <h6 className='font-bold'>Billing address</h6>
                 </div>
 
+                <div className='w-[50%]'>
+                    <h6 className='font-bold'>Payment</h6>
+                </div>
             </div>
 
-            <div className='bg-[#868686] h-[2px] mt-[16px]'></div>
 
-            <div className=' w-[90%] md:grid grid-cols-2  '>
-                <div className="left container mx-auto w-[50%]">
+
+            <div className='bg-[#868686] w-full md:w-[1200px] h-[2px] mt-[16px]'></div>
+
+            <div className=' container mx-auto grid grid-cols-1 md:grid-cols-2 md:max-w-[1200px] px-2'>
+                <div className="left container mx-auto px-4 ">
                     <div className='container mx-auto  mt-[16px]'>
                         <div>
                             <p className='font-normal text-[#0C0C0C] flex gap-4 mt-[16px]'><input type="checkbox" className='scale-125' />Default (same as billing address)</p>
@@ -35,9 +35,9 @@ const PaymentPage = () => {
                         </div>
                     </div>
 
-                    <div className=' container w-[400px] my-6'>
+                    <div className=' container w-[350px] md:w-[400px] my-6'>
                         <div className=' relative'>
-                            <input type="text" placeholder='Name' className='w-full border-2 border-gray-300 py-[12px] px-[36px] mt-[8px]' />
+                            <input type="text" placeholder='Name' className='w-full border-2 border-gray-300  py-[12px] px-[36px] mt-[8px]' />
                             <FontAwesomeIcon icon={faUserAlt} className='absolute top-6.5 left-3' />
                         </div>
 
@@ -82,29 +82,29 @@ const PaymentPage = () => {
                     </div>
                 </div>
 
-                <div className="right">
+                <div className="right px-4">
                     <div className='mt-4'>
                         <p className='font-normal text-[16px]'>Please Choose Your Payment Method</p>
                     </div>
-                    <div className='flex justify-between items-center gap-[3rem] mt-[24px]'>
+                    <div className='flex justify-between items-center gap-[2rem]  mt-[24px]'>
                         <img src={IMAGES.visa} alt="" className='cursor-pointer' />
                         <img src={IMAGES.International} alt="" className='cursor-pointer' />
-                        <img src={IMAGES.Masterrcard} alt="" className='cursor-pointer'/>
-                        <img src={IMAGES.amex} alt=""className='cursor-pointer' />
+                        <img src={IMAGES.Masterrcard} alt="" className='cursor-pointer' />
+                        <img src={IMAGES.amex} alt="" className='cursor-pointer' />
                     </div>
 
                     <div className='flex flex-col gap-5'>
                         <div className='flex items-start gap-4 mt-[32px]'>
                             <div><span>Card Number*</span></div>
-                            <div className='w-[500px]'> <input type="text" className='border-2 border-gray-300 w-full  py-2' /></div>
+                            <div className='w-[500px]'> <input type="text" className='border-2 border-gray-300 w-full py-2' /></div>
 
                         </div>
 
                         <div className='flex items-center gap-8 mt-[24px]'>
                             <span>Expiry Date*</span>
                             <div className='flex  gap-3'>
-                                <input type="text" placeholder='Month' className='border-2 border-gray-300 px-2 py-2' />
-                                <input type="text" placeholder='Year' className='border-2 border-gray-300 px-2 py-2' />
+                                <input type="text" placeholder='Month' className='border-2 border-gray-300 px-2 py-2 w-[105px]' />
+                                <input type="text" placeholder='Year' className='border-2 border-gray-300 px-2 py-2 w-[105px]' />
                             </div>
                         </div>
 

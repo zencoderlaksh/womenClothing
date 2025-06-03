@@ -59,7 +59,7 @@ const AppRoutes = () => {
           <Route path="/filtershoppage" element={<FilterShopPage />} />
 
           <Route path='/modiweekpage' element={<ModiWeekPage />} />
-          <Route path='/productOrder' element={<ProductOrder />} />
+          <Route path='/productorder' element={<ProductOrder />} />
           <Route path='/essentialdress' element={<Essentialdress />} />
           <Route path='/cartpage' element={<CartPage />} />
           <Route path='/infopage' element={<InfoPage />} />

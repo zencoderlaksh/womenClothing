@@ -137,30 +137,30 @@ import L29 from '../images/footerchatbox.png'
 // import L30 from '../images/arrowforward.png'
 // import L31 from '../images/Sustainability.png'
 
-// // landing page ends//
+//! // landing page ends//
 
-// // Desktop/Landing/Collection Menu page start//
+//! // Desktop/Landing/Collection Menu page start//
 import C31 from '../images/product17.png'
 import C32 from '../images/product18.png'
 
-// //Desktop/Landing/Collection Menu page end//
+//! //Desktop/Landing/Collection Menu page end//
 
-// // Desktop/Landing/New in Menu page start//
+//! // Desktop/Landing/New in Menu page start//
 
 import N33 from '../images/product19.png'
 import N34 from '../images/product20.png'
 
-// // Desktop/Landing/New in Menu page end//
+//! // Desktop/Landing/New in Menu page end//
 
-// // Desktop/Landing/Plus Size Menu page start //
+//! // Desktop/Landing/Plus Size Menu page start //
 
 import PS35 from '../images/product21.jpg'
 import PS36 from '../images/product22.png'
 import PS37 from '../images/product23.png'
 
-// // Desktop/Landing/Plus Size Menu page end//
+//! // Desktop/Landing/Plus Size Menu page end//
 
-// // Desktop/Landing/Sustainability Menu page start //
+//! // Desktop/Landing/Sustainability Menu page start //
 import SM38 from '../images/product24.png'
 import SM39 from '../images/product25.png'
 // import SM40 from '../images/product26.png'
@@ -168,9 +168,9 @@ import SM39 from '../images/product25.png'
 // import SM42 from '../images/product28.png'
 // import SM43 from '../images/product29.png'
 
-// // Desktop/Landing/Sustainability Menu page end //
+//! // Desktop/Landing/Sustainability Menu page end //
 
-// // Desktop/Search/02 page start //
+//! // Desktop/Search/02 page start //
 // import S44 from '../images/product30.png'
 // import S45 from '../images/product31.png'
 // import S46 from '../images/product32.png'
@@ -178,65 +178,65 @@ import SM39 from '../images/product25.png'
 // import S48 from '../images/product34.png'
 // import S49 from '../images/product35.png'
 
-// // Desktop/Search/02 page end //
+//! // Desktop/Search/02 page end //
 
-// // filter page png //
+//! // filter page png //
 
-// // Desktop/Shop All/Filters/01  page start //
+//! // Desktop/Shop All/Filters/01  page start //
 // import F50 from '../images/filterbanner.png'
 
-// import F51 from '../images/product36.png'
-// import F52 from '../images/product37.png'
-// import F53 from '../images/product38.png'
-// import F54 from '../images/product39.png'
+import F51 from '../images/product36.png'
+import F52 from '../images/product37.png'
+import F53 from '../images/product38.png'
+import F54 from '../images/product39.png'
 // import F55 from '../images/product40.png'
 // import F56 from '../images/product41.png'
 
-// // Desktop/Shop All/Filters/01  page end //
+//! // Desktop/Shop All/Filters/01  page end //
 
-// // Desktop/Shop All/Filters/02 page start //
+//! // Desktop/Shop All/Filters/02 page start //
 // import F2_57 from '../images/product42.png'
 // import F2_58 from '../images/product43.png'
 // import F2_59 from '../images/product44.png'
-// // Desktop/Shop All/Filters/02 page end //
+//! // Desktop/Shop All/Filters/02 page end //
 
-// // Desktop/Product/Modiweek page start //
+//! // Desktop/Product/Modiweek page start //
 // import M60 from '../images/product45.png'
 // import M61 from '../images/product46.png'
 // import M62 from '../images/product47.png'
 
-// //Desktop/Product/Modiweek page end //
+//! //Desktop/Product/Modiweek page end //
 
-// //Plus Size/Filters/01  page start //
+//! //Plus Size/Filters/01  page start //
 
 // import PS63 from '../images/plussizefilterbanner1.png'
 // import PS64 from '../images/plussizefilterbanner2.png'
 
 // import PS65 from '../images/product48.png'
-// import PS66 from '../images/product49.png'
+import PS66 from '../images/product49.png'
 // import PS67 from '../images/product50.png'
 // import PS68 from '../images/product51.png'
 // import PS69 from '../images/product52.png'
 // import PS70 from '../images/product53.png'
 
-// // Desktop/Plus Size/Filters/01  page end
+//! // Desktop/Plus Size/Filters/01  page end
 
-// // Desktop/Plus Size/Filters/02 page start //
+//! // Desktop/Plus Size/Filters/02 page start //
 // import PS2_71 from '../images/product54.png'
 // import PS2_72 from '../images/product55.png'
 // import PS2_73 from '../images/product56.png'
 // import PS2_74 from '../images/product57.png'
 
-// // Desktop/Plus Size/Filters/02 page end //
+//! // Desktop/Plus Size/Filters/02 page end //
 
-// // Desktop/Plus size Prouduct order pagr start //
+//! // Desktop/Plus size Prouduct order pagr start //
 import PO75 from '../images/product58.jpg'
 import PO76 from '../images/product59.png'
 import PO77 from '../images/product60.png'
 
-// // Desktop/Plus size Prouduct order pag end //
+//! // Desktop/Plus size Prouduct order pag end //
 
-// //Desktop/Sustainability/01 page start //
+//! //Desktop/Sustainability/01 page start //
 
 import SB77 from '../images/sustainabilitybanner.jpg'
 import SB78 from '../images/product61.jpg'
@@ -252,16 +252,16 @@ import SB86 from '../images/product69.png'
 import SB87 from '../images/product70.png'
 import SB88 from '../images/product71.png'
 
-// // Desktop/Sustainability/01 page end //
+//! // Desktop/Sustainability/01 page end //
 
-// // Desktop/ Sustainability/02 page start //
+//! // Desktop/ Sustainability/02 page start //
 import SB2_89 from '../images/product72.png'
 import SB2_90 from '../images/product73.png'
 import SB2_91 from '../images/product74.png'
 import SB2_92 from '../images/product75.png'
 import SB2_93 from '../images/product76.png'
 
-// //Desktop/ Sustainability/02 page end //
+//! //Desktop/ Sustainability/02 page end //
 
 // Desktop/Register/01  page start //
 import R94 from "../images/register.png";
@@ -427,6 +427,17 @@ const IMAGES = {
   //Sustainability Menu page images/
 
   SustainbilityMenuImgOne: SM38,
-  SustainbilityMenuImgTwo: SM39
+  SustainbilityMenuImgTwo: SM39,
+
+  //! Desktop/Prouduct orderimages//
+
+  ProductOrderImgOne:F51,
+  ProductOrderImgTwo:F52,
+  ProductOrderImgThre:F53,
+  ProductOrderImgFour:F54,
+  
+  //!Essentialdress images//
+
+  EssentialdressImgeOne:PS66
 };
 export default IMAGES;
