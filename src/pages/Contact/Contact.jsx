@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-between mt-15 mb-10'>
+                <div className='flex flex-col gap-4 sm:flex-row justify-between mt-15 mb-10'>
                     <div className='bg-[#F0F2EF] flex flex-col justify-center items-center p-[16px] gap-[10px]'>
                         <div><i class="fa-regular fa-message"></i></div>
                         <div><h6 className='font-bold text-[16px]'>Chat with us</h6></div>
