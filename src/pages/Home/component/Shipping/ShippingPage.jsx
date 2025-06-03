@@ -12,8 +12,8 @@ const ShippingPage = () => {
     return (
         <>
 
-            <div className=' container mx-auto'>
-                <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
+            <div className=' container mx-auto px-4'>
+                <Box display="flex" sm:justifyContent="start" alignItems="center" mb={2} >
                   
                     <Box display="flex" alignItems="center" gap={1}>
                         {steps.map((label, index) => (
@@ -38,13 +38,13 @@ const ShippingPage = () => {
                 </Box>
 
             </div>
-            <div className="container mx-auto flex justify-between">
-                <div className="left w-[600px] mt-[7rem]">
+            <div className="container mx-auto flex  gap-6 flex-col sm:flex-row justify-between sm:gap-8 md:gap-12 w-full md:max-w-[1200px]">
+                <div className="left w-full px-4 md:max-w-[50%] mt-[7rem]">
                     <div className='flex justify-between items-center gap-3'>
                         <p>Contact</p>
                         <p className='text-[#748C70]'>Change</p>
                     </div>
-                    <div className='bg-[#868686] h-[2px] w-[600px] my-6'></div>
+                    <div className='bg-[#868686] h-[1px] w-full md:max-w-[600px]  my-6'></div>
 
 
                     <div className='flex justify-between items-center gap-3'>
@@ -55,7 +55,7 @@ const ShippingPage = () => {
                     <div className='my-3'>
                         <h5 className='font-bold text-[20px]'>Delivery Options</h5>
                     </div>
-                    <div className='bg-[#868686] h-[2px] w-[600px] my-6'></div>
+                    <div className='bg-[#868686] h-[1px] w-full md:max-w-[600px] my-6'></div>
 
 
                     <div className='flex justify-between items-center gap-3'>
@@ -81,7 +81,7 @@ const ShippingPage = () => {
                         </div>
                     </div>
 
-                    <div className='bg-[#868686] h-[2px] w-[600px] my-6'></div>
+                    <div className='bg-[#868686] h-[1px] w-full sm:w-[600px] px-4 my-6'></div>
 
 
                     <div>
@@ -115,7 +115,7 @@ const ShippingPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="right container bg-[#F0F2EF] w-[628px] px-4">
+                <div className="right container hidden sm:block bg-[#F0F2EF] px-4 w-full md:max-w-[50%]">
                     <div className='my-5'>
                         <h5 className='fon-bold text-[20px] text-center'>Your Cart</h5>
                     </div>
