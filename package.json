@@ -20,20 +20,29 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+<<<<<<< HEAD
     "@heroui/react": "^2.7.9",
+=======
+>>>>>>> 6c37276ec6e22a6a0966e34473c50f39a3c2bb36
     "@hookform/resolvers": "^5.0.1",
     "@mui/icons-material": "^7.1.0",
     "@mui/material": "^7.1.0",
     "@radix-ui/react-alert-dialog": "^1.1.14",
     "@tailwindcss/vite": "^4.1.6",
     "bootstrap": "^5.3.6",
+    "country-list": "^2.3.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.57.0",
     "react-loading": "^2.0.3",
     "react-modal": "^3.16.3",
+    "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^7.6.0",
+<<<<<<< HEAD
+=======
+    "react-select": "^5.10.1",
+>>>>>>> 6c37276ec6e22a6a0966e34473c50f39a3c2bb36
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
     "zod": "^3.25.51"
