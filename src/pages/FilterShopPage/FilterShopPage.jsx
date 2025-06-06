@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchCards from '../../components/SearchCart/SearchCards'
 import IMAGES from '../../assets/images/projectImage'
 import Filters from '../../components/Filters/Filters'
