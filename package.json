@@ -11,16 +11,17 @@
   },
   "dependencies": {
     "18": "^0.0.0",
+    "@chakra-ui/react": "^3.19.2",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-
     "@fortawesome/fontawesome-free": "^6.7.2",
-
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@heroui/react": "^2.7.9",
+    "@hookform/resolvers": "^5.0.1",
     "@mui/icons-material": "^7.1.0",
     "@mui/material": "^7.1.0",
     "@radix-ui/react-alert-dialog": "^1.1.14",
@@ -29,10 +30,13 @@
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.57.0",
     "react-loading": "^2.0.3",
     "react-modal": "^3.16.3",
     "react-router-dom": "^7.6.0",
-    "react-spinners": "^0.17.0"
+    "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5",
+    "zod": "^3.25.51"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
