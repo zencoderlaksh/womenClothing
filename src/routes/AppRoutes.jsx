@@ -28,6 +28,8 @@ import Contact from "../pages/Contact/Contact";
 import Faqs from "../pages/Faqs/Faqs";
 import Success from "../pages/PaymentSuccess/Success";
 import Failed from "../pages/PaymentFailed/Failed";
+import ProfilePage from "../pages/Profile/ProfilePage";
+
 
 const AppRoutes = () => {
   return (
@@ -62,6 +64,10 @@ const AppRoutes = () => {
           <Route path="/faqs" element={<Faqs />}></Route>
           <Route path="/paymentsuccess" element={<Success />}></Route>
           <Route path="/paymentfailed" element={<Failed />}></Route>
+
+          <Route path='/profilepage' element={<ProfilePage />} />
+
+
         </Route>
       </Routes>
     </>

@@ -5,11 +5,14 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [showmenu, setshowmenu] = useState(false)
   const [ismanuopen, setismanuopen] = useState(false)
   const [isopenBag, setisopenBag] = useState(false)
+  const navigate = useNavigate();
 
 
 
@@ -20,6 +23,10 @@ const Header = () => {
 
   const openbag = () => {
     setisopenBag(!isopenBag)
+  }
+
+  const profile = () => {
+    navigate('/profilepage')
   }
   return (
     <>
@@ -39,11 +46,11 @@ const Header = () => {
             <div className="nav-links">
               <ul>
                 <li className="flex gap-[50px] text-[#404040]">
-                  <a href="">Collection</a>
-                  <a href="">NewIn</a>
-                  <a href="">ModiWeek</a>
-                  <a href="">Plus Size</a>
-                  <a href="">Sutainiblity</a>
+                  <Link to='/'>Collection</Link>
+                  <Link to='/newin'>NewIn</Link>
+                  <Link to='/modiweek'>ModiWeek</Link>
+                  <Link to='/plussize'>Plus Size</Link>
+                  <Link to='/sustainability'>Sutainiblity</Link>
                 </li>
               </ul>
             </div>
@@ -57,7 +64,11 @@ const Header = () => {
                   className="" />
               </button>
             </div>
-            <img className="w-[24px] h-[24px] hidden md:block" src={IMAGES.headerIcon2} alt="" />
+            <div>
+              <button onClick={profile} className="cursor-pointer">
+                <FontAwesomeIcon icon={faUser} />
+              </button>
+            </div>
             <img className="w-[24px] h-[24px] " src={IMAGES.headerIcon4} alt="" />
             <div>
               <button onClick={openbag} className="cursor-pointer">
@@ -75,7 +86,7 @@ const Header = () => {
           <div className="relative w-[82%] mx-auto flex items-center justify-center mb-3">
             <div className="absolute left-3 flex items-center space-x-2">
               <FontAwesomeIcon icon={faMagnifyingGlass} className="text-[#868686] " />
-             
+
             </div>
             <input
               type="text" placeholder="Search..."
@@ -121,7 +132,7 @@ const Header = () => {
               <div className="flex justify-center items-center ">
                 <button className="bg-[#5A6D57] text-white w-[80%] py-2 mt-[32px] cursor-pointer font-normal">Check Out</button>
               </div>
-              
+
             </div>
           </div>
         )
