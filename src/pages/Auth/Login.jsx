@@ -23,20 +23,20 @@ const Login = () => {
               <input
                 type="text"
                 placeholder="Email"
-                className="inp1  border-1 border-gray-400  w-[400px]   px-[10px] py-[15px] mb-2"
+                className="inp1  border-1 border-gray-400 w-[350px] sm:w-[400px]   px-[10px] py-[15px] mb-2"
               />{" "}
               <br />
               <input
                 type="text"
                 placeholder="password"
-                className="inp2 border-1 border-gray-400  w-[400px]   px-[10px] py-[15px]    "
+                className="inp2 border-1 border-gray-400  w-[350px] sm:w-[400px]   px-[10px] py-[15px]    "
               />
             </div>
             <div className="password hidden sm:block ">
-              <p className="bg text-gray-400">Forgot your password?</p>
+              <p className="bg text-gray-400 cursor-pointer">Forgot your password?</p>
             </div>
             <div className="button">
-              <button className="btn bg-[#5A6D57] text-[#FFFFFF] p-4  flex items-center justify-center  w-[400px]   px-[10px] py-[15px]  mt-4">
+              <button className="btn bg-[#5A6D57] text-[#FFFFFF] p-4 cursor-pointer  flex items-center justify-center  w-[350px] sm:w-[400px]   px-[10px] py-[15px]  mt-4">
                 log in
               </button>
             </div>
@@ -45,9 +45,9 @@ const Login = () => {
             </div>
 
             <div className="images flex items-center justify-center gap-3 mt-6">
-              <img src={IMAGES.Apple} className="img1 w-[35px] h-[35px]" />
-              <img src={IMAGES.google} className="img2 w-[35px] h-[35px]" />
-              <img src={IMAGES.facebook} className="img3 w-[35px] h-[35px]" />
+              <img src={IMAGES.Apple} className="img1 w-[35px] h-[35px] cursor-pointer" />
+              <img src={IMAGES.google} className="img2 w-[35px] h-[35px] cursor-pointer" />
+              <img src={IMAGES.facebook} className="img3 w-[35px] h-[35px] cursor-pointer" />
             </div>
             <div className="create text-center  mt-4">
               <a href="#" className="create-acount  sm:font-medium">

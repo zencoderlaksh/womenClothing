@@ -42,7 +42,7 @@ const SellerProductCart = () => {
 
     return (
         <>
-            <div className="text-content sm: mx-auto  w-[74%] flex items-center justify-between mt-[88px]">
+            <div className=" container mx-auto flex justify-between mt-[3rem] px-4">
                 <div className="left">
                     <h3 className=' text-3xl font-bold'>Best Sellers</h3>
                 </div>
@@ -53,7 +53,7 @@ const SellerProductCart = () => {
 
             </div>
 
-            <div className="cart-data sm: mx-auto flex items-center justify-center flex-wrap gap-5 px-4">
+            <div className="container mx-auto  flex flex-col  px-3 justify-center items-center w-full gap-4 sm:flex-row sm:gap-6 sm:px-4 md:max-m-[1200px] ">
 
                 {
                     DataProduct.map((item, i) => {
@@ -65,11 +65,11 @@ const SellerProductCart = () => {
 
                         )
 
-                        
+
                     })
-                    
+
                 }
-                
+
             </div>
 
 
