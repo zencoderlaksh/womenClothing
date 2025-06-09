@@ -7,7 +7,6 @@ import Collection from "../pages/Collections/Collection";
 import NewIn from "../pages/NewIn/NewIn";
 import ModiWeek from "../pages/ModiWeek/ModiWeek";
 import PlusSize from "../pages/PlusSize/PlusSize";
-import Sustainliblity from "../pages/Sustainiblity/Sustainliblity";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import SearchProduct from "../pages/Search/SearchProduct";
@@ -29,6 +28,7 @@ import Faqs from "../pages/Faqs/Faqs";
 import Success from "../pages/PaymentSuccess/Success";
 import Failed from "../pages/PaymentFailed/Failed";
 import ProfilePage from "../pages/Profile/ProfilePage";
+import Sustainability from "../pages/Sustainability/Sustainability";
 
 
 const AppRoutes = () => {
@@ -47,7 +47,7 @@ const AppRoutes = () => {
           <Route path="/newin" element={<NewIn />} />
           <Route path="/modiweek" element={<ModiWeek />} />
           <Route path="/plussize" element={<PlusSize />} />
-          <Route path="/sustainability" element={<Sustainliblity />} />
+          <Route path="/sustainability" element={<Sustainability />} />
           <Route path="/searchproduct" element={<SearchProduct />} />
           <Route path="/filtershoppage" element={<FilterShopPage />} />
 

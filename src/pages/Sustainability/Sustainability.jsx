@@ -2,7 +2,7 @@ import React from 'react'
 import IMAGES from '../../assets/images/projectImage'
 
 
-const Sustainliblity = () => {
+const Sustainability = () => {
   return (
     <>
       <div className='mt-5 relative'>
@@ -110,4 +110,4 @@ const Sustainliblity = () => {
   )
 }
 
-export default Sustainliblity
+export default Sustainability
