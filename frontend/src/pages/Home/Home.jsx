@@ -7,20 +7,22 @@ import LadingPageBanner from './component/SustainabilityBanner/LadingPageBanner'
 import LandingModimal from './component/ModimalCart/LandingModimal'
 
 
+
 const Home = () => {
     return (
         <>
 
 
-          
-          
+
+
 
             <LandingpageHeroBanner />
             <SellerProductCart />
+
             <Collection />
             <ModiweekCart />
             <LadingPageBanner />
-            <LandingModimal />  
+            <LandingModimal />
 
 
         </>

@@ -61,6 +61,7 @@ const Login = () => {
 
                   }
                 />{errors.email && <p className="text-red-600">{errors.email.message} </p>}
+                
                 <br />
                 <input
                   type="password"

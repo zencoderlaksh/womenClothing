@@ -21,7 +21,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
 
+
     "@heroui/react": "^2.7.9",
+
 
     "@hookform/resolvers": "^5.0.1",
     "@mui/icons-material": "^7.1.0",
@@ -43,6 +45,7 @@
 
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
+    "swiper": "^11.2.8",
     "zod": "^3.25.51"
   },
   "devDependencies": {
