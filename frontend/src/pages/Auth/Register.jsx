@@ -8,13 +8,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import { getNames } from "country-list";
 import Select from "react-select";
 
-// Country options for dropdown
+
 const countryOptions = getNames().map((country) => ({
   value: country,
   label: country,
 }));
 
-// Zod validation schema
+
 const schema = z.object({
   firstname: z.string().min(2, { message: 'First name must be at least 2 characters long' }),
   lastname: z.string().min(2, { message: 'Last name must be at least 2 characters long' }),
