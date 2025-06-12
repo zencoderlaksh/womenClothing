@@ -5,8 +5,10 @@ import IMAGES from '../../assets/images/projectImage'
 const Sustainliblity = () => {
   return (
     <>
-      <div className='mt-5'>
-        <img className='w-screen' src={IMAGES.susbanner} alt="" />
+      <div className='mt-5 relative'>
+        <img className='w-[1440px] h-[600px]' src={IMAGES.susbanner} alt="" />
+        <h2 className='font-bold text-[15px] sm:text-[40px] text-[#FFFFFF] absolute bottom-[3rem] left-10 sm:left-[13rem]'>Elegance In Simplicity, Earth’s Harmony</h2>
+
       </div>
 
       <div className='w-[90%] mx-auto'>
