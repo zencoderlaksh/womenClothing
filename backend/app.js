@@ -60,6 +60,3 @@ app.post("/register", (req, res) => {
   res.json({
     yourdata: req.body
   })
-
-
-})
