@@ -11,6 +11,7 @@ const generateToken = (userId) => {
 
 // @desc    Register new user
 const registerUser = async (req, res) => {
+  console.log(req.body)
   const { firstName, lastName, mobile, email, country, password } = req.body;
 
   try {
@@ -44,6 +45,7 @@ const registerUser = async (req, res) => {
 
 // @desc    Login user
 const loginUser = async (req, res) => {
+  console.log(req.body)
   const { email, password } = req.body;
 
   try {

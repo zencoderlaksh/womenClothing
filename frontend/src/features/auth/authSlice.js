@@ -1,30 +1,26 @@
+// src/features/auth/authSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { registerUser, loginUser } from "../../api/authApi";
 
-const API_URL = "http://localhost:5000/api/users";
-
-// Register user
 export const register = createAsyncThunk(
   "auth/register",
   async (userData, thunkAPI) => {
     try {
-      const res = await axios.post(`${API_URL}/register`, userData);
-      return res.data;
+      return await registerUser(userData);
     } catch (err) {
-      return thunkAPI.rejectWithValue(err.response.data.message);
+      return thunkAPI.rejectWithValue(err.response?.data?.message || "Registration failed");
     }
   }
 );
 
-// Login user
+
 export const login = createAsyncThunk(
   "auth/login",
   async (userData, thunkAPI) => {
     try {
-      const res = await axios.post(`${API_URL}/login`, userData);
-      return res.data;
+      return await loginUser(userData);
     } catch (err) {
-      return thunkAPI.rejectWithValue(err.response.data.message);
+      return thunkAPI.rejectWithValue(err.response?.data?.message || "Login failed");
     }
   }
 );
@@ -33,7 +29,7 @@ const authSlice = createSlice({
   name: "auth",
   initialState: {
     user: null,
-    token: null,
+    token: localStorage.getItem("token") || null,
     isLoading: false,
     error: null,
   },
@@ -46,7 +42,6 @@ const authSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      // Register
       .addCase(register.pending, (state) => {
         state.isLoading = true;
         state.error = null;
@@ -61,7 +56,6 @@ const authSlice = createSlice({
         state.error = action.payload;
       })
 
-      // Login
       .addCase(login.pending, (state) => {
         state.isLoading = true;
         state.error = null;

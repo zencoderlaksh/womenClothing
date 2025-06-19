@@ -5,6 +5,10 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { useDispatch } from "react-redux";
+import { loginUser } from "../../api/authApi";
+
+
 
 
 
@@ -15,6 +19,7 @@ const schema = z.object({
 })
 
 const Login = () => {
+  const dispatch = useDispatch();
   const { register, handleSubmit, formState: { errors }, reset } = useForm({
     resolver: zodResolver(schema),
   });
@@ -23,10 +28,20 @@ const Login = () => {
 
   function onSubmit(data) {
 
+
+    dispatch(loginUser(data))
+      .unwrap()
+      .then(() => {
+        toast.success(" Login Successful!");
+        reset();
+      })
+      .catch((err) => {
+        toast.error(err);
+      });
+
     console.log('Data Submmiting', data)
     localStorage.setItem('Login Data', JSON.stringify(data))
-    toast.success(" Login Successful!");
-    reset();
+
 
 
   }

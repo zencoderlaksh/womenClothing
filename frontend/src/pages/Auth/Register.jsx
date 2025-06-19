@@ -7,6 +7,9 @@ import { Slide, ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { getNames } from "country-list";
 import Select from "react-select";
+import { useDispatch, useSelector } from "react-redux";
+import { registerUser } from "../../api/authApi";
+
 
 
 const countryOptions = getNames().map((country) => ({
@@ -27,6 +30,8 @@ const schema = z.object({
 });
 
 const Register = () => {
+  
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
@@ -38,23 +43,18 @@ const Register = () => {
   });
 
   const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    localStorage.setItem('Register Data', JSON.stringify(data));
-    toast.success("Registered successfully!");
-    reset({
-      firstname: '',
-      lastname: '',
-      email: '',
-      password: '',
-      country: '',
-      mobile: ''
-    });
+    dispatch(registerUser(data))
+      .unwrap()
+      .then(() => {
+        toast.success("Registered successfully!");
+        localStorage.setItem('Register Data', JSON.stringify(data));
+        reset();
+      }).catch((err) => {
+        toast.error(err);
+      });
   };
 
-  const onError = (errors) => {
-    console.log("Form Errors:", errors);
-    toast.error("Please fix the form errors before submitting.");
-  };
+
 
   return (
     <>
@@ -73,7 +73,7 @@ const Register = () => {
               Create Account
             </h3>
 
-            <form onSubmit={handleSubmit(onSubmit, onError)} className="w-full flex flex-col items-center">
+            <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col items-center">
               <input
                 {...register("firstname")}
                 type="text"
@@ -134,7 +134,7 @@ const Register = () => {
                         ...base,
                         paddingTop: 8,
                         paddingBottom: 8,
-                        borderRadius:0,
+                        borderRadius: 0,
                         borderColor: "gray",
                         zIndex: 100,
                       }),
@@ -143,7 +143,7 @@ const Register = () => {
                         ...base,
                         backgroundColor: state.isSelected ? "#000" : "white",
                         color: state.isSelected ? "white" : "#000",
-                        
+
                       }),
                     }}
                   />

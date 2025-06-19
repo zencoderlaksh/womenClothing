@@ -128,7 +128,7 @@ const ProfilePage = () => {
                         />
                         <label
                             htmlFor="imageUpload"
-                            className="absolute bottom-0 left-0 bg-blue-500 text-white text-sm px-2 py-1 rounded-full hover:bg-blue-600 cursor-pointer"
+                            className="absolute bottom-0 left-0 bg-[#748C70] text-white text-sm px-2 py-1 rounded-full cursor-pointer"
                         >
                             Edit
                         </label>
@@ -197,7 +197,7 @@ const ProfilePage = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-blue-500 text-white px-4 py-3 rounded hover:bg-blue-600 mt-2"
+                            className="w-full bg-[#748C70] text-white px-4 py-3 rounded  mt-2"
                         >
                             Update Profile
                         </button>

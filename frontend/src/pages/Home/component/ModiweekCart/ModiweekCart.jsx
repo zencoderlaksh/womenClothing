@@ -1,13 +1,13 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Keyboard, Pagination, Navigation, Autoplay } from 'swiper/modules'; // Added Autoplay module
 import IMAGES from '../../../../assets/images/projectImage';
 import ModiweekItem from '../../../../components/ModiweekDummy/ModiweekItem';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import 'swiper/css/navigation';
 
 const ModiweekCart = () => {
     const ModiweekData = [
@@ -32,11 +32,6 @@ const ModiweekCart = () => {
             title: 'Wednesday',
         },
         {
-            id: 2,
-            img: IMAGES.ModiweekTwo,
-            title: 'Monday',
-        },
-        {
             id: 3,
             img: IMAGES.ModiweekThree,
             title: 'Tuesday',
@@ -49,60 +44,75 @@ const ModiweekCart = () => {
     ];
 
     return (
-        <>
+        <div className="container mx-auto px-3 w-full sm:px-4 md:max-w-[1250px] py-5">
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={20}
+                loop={true}
+                autoplay={{
+                    delay: 2500, // 2.5 seconds delay between slides
+                    disableOnInteraction: false, // Continue autoplay after user interaction
+                }}
+                keyboard={{ enabled: true }}
+                pagination={{
+                    clickable: true,
+                    el: '.modiweek-pagination',
+                    bulletClass: 'swiper-pagination-bullet',
+                    bulletActiveClass: 'swiper-pagination-bullet-active'
+                }}
+                navigation={{
+                    nextEl: '.modiweek-button-next',
+                    prevEl: '.modiweek-button-prev',
+                }}
+                modules={[Keyboard, Pagination, Navigation, Autoplay]} // Added Autoplay module
+                className="relative"
+                breakpoints={{
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    768: { slidesPerView: 3, spaceBetween: 25 },
+                    1024: { slidesPerView: 4, spaceBetween: 30 },
+                }}
+            >
+                {ModiweekData.map((item) => (
+                    <SwiperSlide key={item.id} className="flex justify-center">
+                        <div className="w-full max-w-[280px]">
+                            <ModiweekItem
+                                id={item.id}
+                                img={item.img}
+                                title={item.title}
+                            />
+                        </div>
+                    </SwiperSlide>
+                ))}
 
-            <div className="container mx-auto px-3 w-full sm:px-4 md:max-w-[1250px] " >
-                <Swiper
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    centeredSlides={true}
-                    loop={true}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                        el: '.swiper-pagination',
-                        bulletClass: 'swiper-pagination-bullet bg-blue-600 w-3 h-3 rounded-full mx-1',
-                        bulletActiveClass: 'swiper-pagination-bullet-active bg-blue-800',
-                    }}
-                    navigation={{
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 20,
-                        },
-                    }}
-                    className="w-full h-auto py-6 "
+                {/* Custom Navigation Buttons */}
+                <div className="modiweek-button-prev absolute top-1/2 left-0 z-10 -translate-y-1/2 cursor-pointer bg-white/80 hover:bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                </div>
+                <div className="modiweek-button-next absolute top-1/2 right-0 z-10 -translate-y-1/2 cursor-pointer bg-white/80 hover:bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
 
-                >
-                    {ModiweekData.map((item) => (
-                        <SwiperSlide key={item.id} className="flex justify-center items-center p-2 sm:max-w-[280px]" style={{ marginRight: "0" }}>
-                            <div className="cart w-full sm:max-w-[280px]">
-                                <ModiweekItem
-                                    id={item.id}
-                                    img={item.img}
-                                    title={item.title}
+                
+                <div className="modiweek-pagination flex justify-center mt-6 space-x-2" />
+            </Swiper>
 
-                                />
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                    <div className="swiper-pagination mt-4 flex justify-center gap-1"></div>
-                    <div className="swiper-button-prev text-blue-600 hover:text-blue-800 w-10 h-10 after:text-2xl"></div>
-                    <div className="swiper-button-next text-blue-600 hover:text-blue-800 w-10 h-10 after:text-2xl"></div>
-                </Swiper>
-            </div>
-        </>
+           
+            <style jsx global>{`
+                .swiper-pagination-bullet {
+                    width: 12px;
+                    height: 12px;
+                    background-color: #d1d5db;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active {
+                    background-color: #000;
+                }
+            `}</style>
+        </div>
     );
 };
 
