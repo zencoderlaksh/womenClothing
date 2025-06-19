@@ -1,16 +1,23 @@
 import React from 'react';
 import IMAGES from '../../../../assets/images/projectImage';
 import SellerCart from '../../../../components/bestsellerscart/SellerCart';
+import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { setSelectedItem } from '../../../../features/auth/productSlice';
 
 const SellerProductCart = () => {
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const DataProduct = [
         {
             id: 1,
@@ -37,7 +44,7 @@ const SellerProductCart = () => {
             color: ['#D0A5EA', '#909225', '#748C70']
         },
         {
-            id: 4, 
+            id: 4,
             img: IMAGES.imgOne,
             title: 'Tailored Stretch',
             content: 'Turn It Up Pants',
@@ -45,7 +52,7 @@ const SellerProductCart = () => {
             color: ['#0C0C0C', '#7DC3EB', '#748C70']
         },
         {
-            id: 5, 
+            id: 5,
             img: IMAGES.imgTwo,
             title: 'Technical Silk',
             content: 'Make A Splash',
@@ -53,7 +60,7 @@ const SellerProductCart = () => {
             color: ['#909225', '#19418E', '#0C0C0C']
         },
         {
-            id: 6, 
+            id: 6,
             img: IMAGES.imgThree,
             title: 'Cool Weave',
             content: 'Anywhere Dress',
@@ -62,9 +69,15 @@ const SellerProductCart = () => {
         }
     ];
 
+    const handleClick = (item) => {
+        dispatch(setSelectedItem(item));
+        navigate('/productorder'); // <-- replace with correct route
+    };
+
+
     return (
         <>
-           
+
             <div className="container mx-auto w-[95%] flex justify-between mt-12 px-4 md:px-6">
                 <div className="left">
                     <h3 className="text-3xl font-bold text-gray-800">Best Sellers</h3>
@@ -72,17 +85,17 @@ const SellerProductCart = () => {
                 <div className="right font-normal">
                     <button className="text-[#5A6D57] cursor-pointer">
                         View All
-                    </button>  
+                    </button>
                 </div>
             </div>
 
-           
+
             <div className="container mx-auto px-3 w-full sm:px-4 md:max-w-[1200px]">
                 <Swiper
                     spaceBetween={30}
-                    slidesPerView={1} 
+                    slidesPerView={1}
                     centeredSlides={true}
-                    loop={true} 
+                    loop={true}
                     autoplay={{
                         delay: 2000,
                         disableOnInteraction: false,
@@ -100,7 +113,7 @@ const SellerProductCart = () => {
                     modules={[Autoplay, Pagination, Navigation]}
                     breakpoints={{
                         640: {
-                            slidesPerView: 2, 
+                            slidesPerView: 2,
                             spaceBetween: 20,
                         },
                         1024: {
@@ -112,7 +125,7 @@ const SellerProductCart = () => {
                 >
                     {DataProduct.map((item) => (
                         <SwiperSlide key={item.id} className="flex justify-center items-center p-2">
-                            <div className="cart w-full max-w-sm">
+                            <div className="cart w-full max-w-sm" onClick={() => handleClick(item)}>
                                 <SellerCart
                                     id={item.id}
                                     img={item.img}
@@ -125,8 +138,7 @@ const SellerProductCart = () => {
                         </SwiperSlide>
                     ))}
                     <div className="swiper-pagination mt-4 flex justify-center gap-1"></div>
-                    <div className="swiper-button-prev text-blue-600 hover:text-blue-800 w-10 h-10 after:text-2xl"></div>
-                    <div className="swiper-button-next text-blue-600 hover:text-blue-800 w-10 h-10 after:text-2xl"></div>
+
                 </Swiper>
             </div>
         </>

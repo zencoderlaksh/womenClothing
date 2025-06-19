@@ -47,8 +47,8 @@ const Header = () => {
               <ul>
                 <li className="flex gap-[50px] text-[#404040]">
                   <Link to='/'>Collection</Link>
-                  <Link to='/newin'>NewIn</Link>
-                  <Link to='/modiweek'>ModiWeek</Link>
+                  <Link to='/filtershoppage'>NewIn</Link>
+                  <Link to='/modiweekpage'>ModiWeek</Link>
                   <Link to='/plussize'>Plus Size</Link>
                   <Link to='/sustainability'>Sutainiblity</Link>
                 </li>

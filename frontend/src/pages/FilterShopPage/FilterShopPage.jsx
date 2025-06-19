@@ -3,7 +3,12 @@ import SearchCards from '../../components/SearchCart/SearchCards';
 import IMAGES from '../../assets/images/projectImage';
 import Filters from '../../components/Filters/Filters';
 
+
 const FilterShopPage = ({ button }) => {
+
+    
+
+
     const DataProduct = [
         {
             id: 1,

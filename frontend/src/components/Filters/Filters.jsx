@@ -102,7 +102,7 @@ const FilterPanel = () => {
               <div className="bg-white px-4 py-3 space-y-2 border rounded mt-2">
                 {filter.options.map((option) => (
                   <label key={option} className="flex items-center space-x-2">
-                    <input
+                    <input 
                       type="checkbox"
                       checked={selectedFilters.includes(option)}
                       onChange={() => handleFilterChange(option)}

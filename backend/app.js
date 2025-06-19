@@ -35,11 +35,11 @@ mongoose
   .then(() => {
     console.log("✅ MongoDB connected successfully");
     app.listen(PORT, () => {
-      console.log(`🚀 Server running at http://localhost:${PORT}`);
+      console.log(` Server running at http://localhost:${PORT}`);
     });
   })
   .catch((err) => {
-    console.error("❌ MongoDB connection failed:", err.message);
+    console.error(" MongoDB connection failed:", err.message);
     process.exit(1);
   });
 
@@ -60,6 +60,3 @@ app.post("/register", (req, res) => {
   res.json({
     yourdata: req.body
   })
-
-
-})
