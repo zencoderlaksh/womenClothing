@@ -19,6 +19,10 @@ app.get("/test", (req, res) => {
 });
 app.use("/api/users", userRoutes);
 
+
+
+
+
 // MongoDB connection and server start
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
@@ -38,3 +42,24 @@ mongoose
     console.error("❌ MongoDB connection failed:", err.message);
     process.exit(1);
   });
+
+
+
+
+app.post("/login", (req, res) => {
+  console.log(req.body)
+  res.json({
+    yourdata: req.body
+  })
+
+
+})
+
+app.post("/register", (req, res) => {
+  console.log(req.body)
+  res.json({
+    yourdata: req.body
+  })
+
+
+})
